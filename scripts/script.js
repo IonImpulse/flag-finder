@@ -1,5 +1,3 @@
-const { exit } = require("process");
-
 async function load_data() {
     return new Promise((resolve, reject) => {
         Papa.parse("https://raw.githubusercontent.com/IonImpulse/smart-flag-finder/main/data/flag.database.csv", {
@@ -124,10 +122,13 @@ function find_most_divisive(flags_left, attributes_available) {
     for (let part in percentage_list) {
         if (percentage_list[part] < min_standard_deviation) {
             min_standard_deviation = percentage_list[part];
+            console.log(min_standard_deviation);
+    
             min_standard_deviation_name = part;
         }
     }
 
+    
     return min_standard_deviation_name
 }
 
@@ -339,15 +340,9 @@ async function main() {
         
         let attribute = find_most_divisive(flags_left, attributes_available);
 
-        console.log(attribute);
-
         const question_response = return_question(attribute);
 
-        console.log(question_response);
-
         let question_to_set = `<div id="question">${question_response.question}</div>`;
-
-        console.log(question_to_set);
 
         let question_element = document.getElementById("question-holder");
 
