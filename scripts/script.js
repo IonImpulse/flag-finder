@@ -320,7 +320,7 @@ async function main() {
         
         for (flag of flags_left) {
             output += `
-            <img src="${flag.URL}" width=200px>
+            <img src="${flag.URL}" width=320px>
             <div class="sub">${flag.Name}</div>
             `;
         }
