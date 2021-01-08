@@ -1,3 +1,5 @@
+const { exit } = require("process");
+
 async function load_data() {
     return new Promise((resolve, reject) => {
         Papa.parse("https://raw.githubusercontent.com/IonImpulse/smart-flag-finder/main/data/flag.database.csv", {
@@ -207,22 +209,6 @@ function return_question(attribute) {
     };
 }
 
-const yes_no_buttons = `
-<div class="good-button" id="true-button" onclick="return_true()">NO</div>
-<div class="good-button" id="true-button" onclick="return_false()">YES</div>
-`;
-
-const number_select = `
-<div>
-    <span class="stepper good-button">
-    <button>–</button>
-    <input type="number" id="stepper" value="0" min="0" max="100" step="1">
-    <button>+</button>
-    </span>
-</div>
-<div class="good-button" id="true-button" onclick="return_number()">SUBMIT</div>
-`;
-
 function return_true() {
     sessionStorage.setItem("last_answer", true);
     main();
@@ -275,6 +261,22 @@ function setup() {
     main();
 }
 async function main() {
+    const yes_no_buttons = `
+    <div class="good-button" id="true-button" onclick="return_true()">NO</div>
+    <div class="good-button" id="true-button" onclick="return_false()">YES</div>
+    `;
+
+    const number_select = `
+    <div>
+        <span class="stepper good-button">
+        <button>–</button>
+        <input type="number" id="stepper" value="0" min="0" max="100" step="1">
+        <button>+</button>
+        </span>
+    </div>
+    <div class="good-button" id="true-button" onclick="return_number()">SUBMIT</div>
+    `;
+
     let flags_left = JSON.parse(sessionStorage.getItem("flags_left"));
     let attributes_available = JSON.parse(sessionStorage.getItem("attributes_available"));
     let iterations = parseInt(sessionStorage.getItem("iterations"));
@@ -282,34 +284,56 @@ async function main() {
     let last_question_type = sessionStorage.getItem("last_question_type");
     let last_answer = sessionStorage.getItem("last_answer");
     
-    if (!(last_question == "")) {
+    if (last_question !== "") {
         if (last_question_type == "bool") {
             last_answer = Boolean(last_answer);
         } else if (last_question_type == "number") {
             last_answer = parseInt(last_answer);
         }
 
-        console.log(last_answer);
 
         attributes_available[last_question] = false;
 
         let to_delete = [];
 
         for (let flag in flags_left) {
-            if (!(flags_left[flag][last_question] == last_answer)) {
+            if (flags_left[flag][last_question] !== last_answer) {
                 to_delete.push(flag);
             }
         }
 
+        let deleted = 0;
+
         for (let del of to_delete) {
-            flags_left.splice(del, 1);
+            flags_left.splice(del - deleted, 1);
+            deleted += 1;
         }
+    }
+
+    let button_placeholder = document.getElementById("button-holder");
+
+    if (flags_left.length < 5) {
+        let question_element = document.getElementById("question-holder");
+        question_element.innerHTML = `<div id="question">RESULTS</div>`;
+
+        let output = ``;
+        
+        for (flag of flags_left) {
+            output += `
+            <img src="${flag.URL}" width=200px>
+            <div class="sub">${flag.Name}</div>
+            `;
+        }
+
+        button_placeholder.innerHTML = output;
+
+        throw new Error();
     }
 
     console.log(flags_left);
     console.table(attributes_available);
 
-    let button_placeholder = document.getElementById("button-holder");
+    
 
     if (!empty_attributes(attributes_available) && flags_left.length > 1 && iterations < 30) {
         
