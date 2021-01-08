@@ -77,10 +77,8 @@ function get_score(list) {
     if (standard_deviation == 0) {
         return 0;
     }
-
-    console.log(standard_deviation);
-
-    return standard_deviation + ((sum(temp_list)/list.length));
+    
+    return standard_deviation + ((sum(list)/temp_list.length));
 
 }
 
@@ -110,14 +108,15 @@ function find_most_divisive(flags_left, attributes_available) {
 
             } else {
                 for (var flag of flags_left) {
-                    if (temp_list[flag[part]] != undefined) {
-                        temp_list[flag[part]] = 1;
-                    } else {
-                        temp_list[flag[part]] += 1;
+                    if (flag[part] != undefined) {
+                        if (temp_list[flag[part]] == undefined) {
+                            temp_list[flag[part]] = 1;
+                        } else {
+                            temp_list[flag[part]] += 1;
+                        }
                     }
                 }
 
-                console.log(temp_list);
                 return_score = get_score(temp_list);
             }
 
@@ -129,16 +128,12 @@ function find_most_divisive(flags_left, attributes_available) {
     let min_score = Infinity;
     let min_name;
 
-    console.log(percentage_list);
-
     for (let part in percentage_list) {
         if (percentage_list[part] < min_score) {
             min_score = percentage_list[part];    
             min_name = part;
         }
     }
-
-    console.log(min_score, min_name);
     return min_name;
 }
 
@@ -317,7 +312,6 @@ async function main() {
 
         for (let flag in flags_left) {
             if (flags_left[flag][last_question] !== last_answer) {
-                console.log(flags_left[flag], flag, last_question, last_answer);
                 to_delete.push(flag);
             }
         }
