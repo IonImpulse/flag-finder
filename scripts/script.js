@@ -56,7 +56,7 @@ function sum(array) {
     return to_return;
 }
 
-function standardDeviation(arr, usePopulation = true) {
+function standardDeviation(arr, usePopulation = false) {
     const mean = arr.reduce((acc, val) => acc + val, 0) / arr.length;
     return Math.sqrt(
       arr.reduce((acc, val) => acc.concat((val - mean) ** 2), []).reduce((acc, val) => acc + val, 0) /
@@ -78,7 +78,9 @@ function get_score(list) {
         return 0;
     }
 
-    return standard_deviation/sum(list);
+    console.log(standard_deviation);
+
+    return standard_deviation + ((sum(temp_list)/list.length));
 
 }
 
@@ -88,48 +90,56 @@ function find_most_divisive(flags_left, attributes_available) {
     for (let part in attributes_available) {
         if (attributes_available[part] === true && part != "url" && part != "name") {
             let temp_list = {};
-
+            let return_score = Infinity;
+            
             if (typeof flags_left[0][part] === "boolean") {
                 temp_list = {
                     contains: 0,
                     n_contains: 0,
                 };
                 
-                for (var flag in flags_left) {
-                    if (flag[part]) {
+                for (var flag of flags_left) {
+                    if (flag[part] === true) {
                         temp_list.contains += 1;
                     } else {
                         temp_list.n_contains += 1;
                     }
                 }
+
+                return_score = Math.abs(temp_list.contains-temp_list.n_contains);
+
             } else {
-                for (var flag in flags_left) {
-                    if (!(flag[part] in temp_list)) {
+                for (var flag of flags_left) {
+                    if (temp_list[flag[part]] != undefined) {
                         temp_list[flag[part]] = 1;
                     } else {
                         temp_list[flag[part]] += 1;
                     }
                 }
+
+                console.log(temp_list);
+                return_score = get_score(temp_list);
             }
 
-            percentage_list[part] = get_score(temp_list);
+            percentage_list[part] = return_score;
+            
         }
     }
 
-    let min_standard_deviation = Infinity;
-    let min_standard_deviation_name;
+    let min_score = Infinity;
+    let min_name;
+
+    console.log(percentage_list);
 
     for (let part in percentage_list) {
-        if (percentage_list[part] < min_standard_deviation) {
-            min_standard_deviation = percentage_list[part];
-            console.log(min_standard_deviation);
-    
-            min_standard_deviation_name = part;
+        if (percentage_list[part] < min_score) {
+            min_score = percentage_list[part];    
+            min_name = part;
         }
     }
 
-    
-    return min_standard_deviation_name
+    console.log(min_score, min_name);
+    return min_name;
 }
 
 
@@ -189,7 +199,7 @@ function return_question(attribute) {
         type = "bool";
 
     } else if (attribute == "contains_image") {
-        question = `Does it contain an image?`;
+        question = `Does it contain an image or coat of arms?`;
         type = "bool";
 
     } else if (attribute == "contains_text") {
@@ -263,8 +273,10 @@ function setup() {
 }
 async function main() {
     const yes_no_buttons = `
-    <div class="good-button" id="true-button" onclick="return_true()">NO</div>
-    <div class="good-button" id="true-button" onclick="return_false()">YES</div>
+    <div>
+        <div class="good-button" id="false-button" onclick="return_false()">NO</div>
+        <div class="good-button" id="true-button" onclick="return_true()">YES</div>
+    </div>
     `;
 
     const number_select = `
@@ -285,9 +297,15 @@ async function main() {
     let last_question_type = sessionStorage.getItem("last_question_type");
     let last_answer = sessionStorage.getItem("last_answer");
     
+    console.log(flags_left, attributes_available, iterations, last_question, last_question_type, last_answer);
+
     if (last_question !== "") {
         if (last_question_type == "bool") {
-            last_answer = Boolean(last_answer);
+            if (last_answer == "true") {
+                last_answer = true;
+            } else {
+                last_answer = false;
+            }
         } else if (last_question_type == "number") {
             last_answer = parseInt(last_answer);
         }
@@ -299,6 +317,7 @@ async function main() {
 
         for (let flag in flags_left) {
             if (flags_left[flag][last_question] !== last_answer) {
+                console.log(flags_left[flag], flag, last_question, last_answer);
                 to_delete.push(flag);
             }
         }
@@ -315,7 +334,7 @@ async function main() {
 
     if (flags_left.length < 5) {
         let question_element = document.getElementById("question-holder");
-        question_element.innerHTML = `<div id="question">RESULTS</div>`;
+        question_element.innerHTML = `<div id="question" class="good-button" onclick="setup()">RESULTS (Click to reset)</div>`;
 
         let output = ``;
         
@@ -330,10 +349,6 @@ async function main() {
 
         throw new Error();
     }
-
-    console.log(flags_left);
-    console.table(attributes_available);
-
     
 
     if (!empty_attributes(attributes_available) && flags_left.length > 1 && iterations < 30) {

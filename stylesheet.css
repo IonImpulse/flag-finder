@@ -50,6 +50,8 @@ number-flag {
     /*placement for code pen*/
     margin: 0 auto;
     margin-top: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
     /*Button Text Style*/
     font-size: inherit;
     text-align: center;
