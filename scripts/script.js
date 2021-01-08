@@ -22,18 +22,18 @@ async function start() {
 
     console.log("Loaded data!");
 
+    document.getElementById("subtext").innerHTML = `[ With a database of <number-flag>${flag_data.length}</number-flag> flags and counting ]`;
     return flag_data;
 }
-
-var flag_data;
-
 
 async function button_click() {
     document.getElementById("start-button").setAttribute('onclick', "");
     document.getElementById("start-button").style.opacity = "0";
     
-    if (!flag_data) {
-        flag_data = await start();
+    if (sessionStorage.getItem("flag_data") == false) {
+        console.log("Redoing flag data request!");
+        let flag_data = await start();
+        sessionStorage.setItem("flag_data", JSON.stringify(await start()));
     }
     
 
@@ -231,7 +231,7 @@ function return_number() {
 }
 
 function setup() {
-    let flags_left = flag_data;
+    let flags_left = JSON.parse(sessionStorage.getItem("flag_data"));
     let attributes_available = {
         name: true,
         url: true,
@@ -341,11 +341,7 @@ async function main() {
 
         button_placeholder.innerHTML = output;
 
-        throw new Error();
-    }
-    
-
-    if (!empty_attributes(attributes_available) && flags_left.length > 1 && iterations < 30) {
+    } else if (!empty_attributes(attributes_available) && flags_left.length > 1 && iterations < 30) {
         
         let attribute = find_most_divisive(flags_left, attributes_available);
 
@@ -377,3 +373,10 @@ async function main() {
 
     
 }
+
+
+async function onLoad() {
+    sessionStorage.setItem("flag_data", JSON.stringify(await start()));
+}
+
+onLoad();
