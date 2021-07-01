@@ -1,14 +1,14 @@
-async function load_data() {
+async function load_data(csv_name) {
     return new Promise((resolve, reject) => {
-        Papa.parse("https://raw.githubusercontent.com/IonImpulse/smart-flag-finder/main/data/flag.database.csv", {
+        Papa.parse(`https://raw.githubusercontent.com/IonImpulse/smart-flag-finder/main/data/${csv_name}`, {
             download: true,
             dynamicTyping: true,
             worker: true,
             header: true,
-            complete (results, file) {
+            complete(results, file) {
                 resolve(results.data)
             },
-            error (err, file) {
+            error(err, file) {
                 reject(err)
             }
         });
@@ -16,9 +16,21 @@ async function load_data() {
 }
 
 async function start() {
+    const FLAG_FILES = [
+        "countries.csv",
+        "pride.csv",
+        "misc.csv",
+    ];
+
     console.log("Loading data...");
 
-    const flag_data = await load_data();
+    let flag_data_promises = [];
+
+    for (file of FLAG_FILES) {
+        flag_data_promises.push(load_data(file));
+    }
+    
+    const flag_data = await Promise.all(flag_data_promises);
 
     console.log("Loaded data!");
 
