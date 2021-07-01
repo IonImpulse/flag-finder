@@ -64,7 +64,9 @@ function standardDeviation(arr, usePopulation = false) {
     );
 };
 
-
+function go_home() {
+    document.location = document.location.href;
+}
 function get_score(list) {
     let temp_list = [];
 
@@ -324,7 +326,7 @@ async function main() {
         }
     }
 
-    let button_placeholder = document.getElementById("button-holder");
+    let button_placeholder = document.getElementById("choices-holder");
 
     if (flags_left.length < 5) {
         let question_element = document.getElementById("question-holder");
