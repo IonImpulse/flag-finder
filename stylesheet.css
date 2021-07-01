@@ -43,7 +43,7 @@ attribute-flag {
 }
 
 .flag-orange {
-    background-color: rgb(214, 142, 8);
+    background-color: rgb(214, 101, 8);
 }
 
 #top {
@@ -108,6 +108,11 @@ attribute-flag {
     align-items: center;
     max-width: 80%;
     margin: 0 auto;
+    background-color: #170b25;
+    border: #eeeeee double 1vmax;
+    opacity: 0;
+    margin-top: 3vmax;
+    margin-bottom: 5vmax;
 }
 .ranked-pic {
     width: 13vmax;

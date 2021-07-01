@@ -34,13 +34,19 @@ async function start() {
 
     let flag_data = flag_data_promises.flat();
 
+    for (flag of flag_data) {
+        if (flag.Name == null) {
+            flag_data.splice(flag_data.indexOf(flag), 1);
+        }
+    }
+
     console.log("Loaded data!");
 
     document.getElementById("subtext").innerHTML = `[ With a database of <number-flag>${flag_data.length}</number-flag> flags and counting ]`;
     return flag_data;
 }
 
-async function button_click() {
+async function start_click() {
     document.getElementById("start-button").setAttribute('onclick', "");
     document.getElementById("start-button").style.opacity = "0";
     
@@ -49,9 +55,34 @@ async function button_click() {
         let flag_data = await start();
         sessionStorage.setItem("flag_data", JSON.stringify(await start()));
     }
-    
 
     setTimeout(setup, 700);
+}
+
+async function view_click() {
+    if (sessionStorage.getItem("flag_data") == false) {
+        console.log("Redoing flag data request!");
+        let flag_data = await start();
+        sessionStorage.setItem("flag_data", JSON.stringify(await start()));
+    }
+    
+    let flags_left = JSON.parse(sessionStorage.getItem("flag_data"));
+    let question_element = document.getElementById("question-holder");
+    question_element.innerHTML = `<div id="question" class="good-button" onclick="setup()">RESULTS (Click to reset)</div>`;
+
+    let output = ``;
+    
+    for (flag of flags_left) { 
+        output += `<div class="flag-frame">
+        <img src="${flag.URL}" width=320px>
+        <div class="sub">${flag.Name}</div></div>
+        `;
+    }
+
+    document.getElementById("choices-holder").innerHTML = "";
+
+    document.getElementById("answers-holder").innerHTML = output;
+    document.getElementById("answers-holder").style.opacity = 100;
 }
 
 function delete_button() {
@@ -247,6 +278,7 @@ function return_number() {
 }
 
 function setup() {
+    document.getElementById("answers-holder").style.opacity = 0;
     let flags_left = JSON.parse(sessionStorage.getItem("flag_data"));
     let attributes_available = {
         name: true,
@@ -360,6 +392,7 @@ async function main() {
         button_placeholder.innerHTML = "";
 
         document.getElementById("answers-holder").innerHTML = output;
+        document.getElementById("answers-holder").style.opacity = 100;
 
     } else if (!empty_attributes(attributes_available) && flags_left.length > 1 && iterations < 30) {
         
