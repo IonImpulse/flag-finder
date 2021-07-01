@@ -350,7 +350,7 @@ async function main() {
 
         let output = ``;
         
-        for (flag of flags_left) {
+        for (flag of flags_left) { 
             output += `<div class="flag-frame">
             <img src="${flag.URL}" width=320px>
             <div class="sub">${flag.Name}</div></div>
