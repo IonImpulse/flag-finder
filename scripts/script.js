@@ -205,8 +205,8 @@ function return_question(attribute) {
 
         type = "number";
 
-    } else if (["red", "green", "blue", "gold", "white", "black", "orange"].includes(attribute)){
-        question = `Does it contain the colour <attribute-flag>${attribute}?</attribute-flag>`;
+    } else if (["red", "green", "blue", "yellow", "white", "black", "orange"].includes(attribute)){
+        question = `Does it contain the colour <attribute-flag><span style="background-color: ${attribute}">${attribute}?</span></attribute-flag>`;
         type = "bool";
 
     } else if (attribute == "contains_image") {
@@ -257,7 +257,7 @@ function setup() {
         red: true,
         green: true,
         blue: true,
-        gold: true,
+        yellow: true,
         white: true,
         black: true,
         orange: true,

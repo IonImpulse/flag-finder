@@ -1,4 +1,4 @@
-Name,URL,bars,stripes,colours,red,green,blue,gold,white,black,orange,circles,crosses,saltires,quarters,stars,crescents,triangles,contains_image,contains_text
+Name,URL,bars,stripes,colours,red,green,blue,yellow,white,black,orange,circles,crosses,saltires,quarters,stars,crescents,triangles,contains_image,contains_text
 Afghanistan,https://flagcdn.com/w640/af.png,0,3,5,TRUE,TRUE,FALSE,TRUE,TRUE,TRUE,FALSE,0,0,0,0,1,0,0,TRUE,FALSE
 Albania,https://flagcdn.com/w640/al.png,0,0,3,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,0,0,0,0,1,0,0,FALSE,FALSE
 Algeria,https://flagcdn.com/w640/dz.png,2,0,3,TRUE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,0,0,0,0,1,1,0,FALSE,FALSE
