@@ -30,7 +30,9 @@ async function start() {
         flag_data_promises.push(load_data(file));
     }
     
-    const flag_data = await Promise.all(flag_data_promises);
+    flag_data_promises = await Promise.all(flag_data_promises);
+
+    let flag_data = flag_data_promises.flat();
 
     console.log("Loaded data!");
 

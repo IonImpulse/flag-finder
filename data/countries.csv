@@ -155,13 +155,13 @@ South Korea,https://flagcdn.com/w640/kr.png,0,0,4,TRUE,FALSE,TRUE,FALSE,TRUE,TRU
 Yemen,flag-photos/countries/Yemen.png,0,3,3,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,0,0,0,0,0,0,0,FALSE,FALSE
 Spain,https://flagcdn.com/w640/es.png,0,3,2,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,0,0,0,0,0,0,0,FALSE,FALSE
 Sri Lanka,https://flagcdn.com/w640/lk.png,2,0,4,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,TRUE,0,0,0,0,0,0,0,TRUE,FALSE
-St Helena,https://flagcdn.com/w640/sh.png,0,0,7,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,TRUE,0,1,1,1,0,0,0,TRUE,FALSE
-St Kitts Nevis,,0,0,5,TRUE,TRUE,FALSE,TRUE,TRUE,TRUE,FALSE,0,0,0,0,2,0,1,FALSE,FALSE
-St Lucia,,0,0,4,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,0,0,0,0,0,0,1,FALSE,FALSE
-St Vincent,,5,0,4,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE,0,0,0,0,0,0,0,TRUE,TRUE
+Saint Helena,https://flagcdn.com/w640/sh.png,0,0,7,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,TRUE,0,1,1,1,0,0,0,TRUE,FALSE
+Saint Kitts Nevis,https://upload.wikimedia.org/wikipedia/commons/f/fe/Flag_of_Saint_Kitts_and_Nevis.svg,0,0,5,TRUE,TRUE,FALSE,TRUE,TRUE,TRUE,FALSE,0,0,0,0,2,0,1,FALSE,FALSE
+Saint Lucia,https://upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_Saint_Lucia.svg,0,0,4,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,0,0,0,0,0,0,1,FALSE,FALSE
+Saint Vincent and the Grenadines,https://upload.wikimedia.org/wikipedia/commons/6/6d/Flag_of_Saint_Vincent_and_the_Grenadines.svg,5,0,4,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE,0,0,0,0,0,0,0,TRUE,TRUE
 Sudan,https://flagcdn.com/w640/sd.png,0,3,4,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,0,0,0,0,0,0,1,FALSE,FALSE
-Surinam,,0,5,4,TRUE,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,0,0,0,0,1,0,0,FALSE,FALSE
-Swaziland,,0,5,7,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,TRUE,0,0,0,0,0,0,0,TRUE,FALSE
+Surinam,https://upload.wikimedia.org/wikipedia/commons/6/60/Flag_of_Suriname.svg,0,5,4,TRUE,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,0,0,0,0,1,0,0,FALSE,FALSE
+Eswatini,https://upload.wikimedia.org/wikipedia/commons/f/fb/Flag_of_Eswatini.svg,0,5,7,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,TRUE,0,0,0,0,0,0,0,TRUE,FALSE
 Sweden,https://flagcdn.com/w640/se.png,0,0,2,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE,0,1,0,0,0,0,0,FALSE,FALSE
 Switzerland,https://flagcdn.com/w640/ch.png,0,0,2,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,0,1,0,0,0,0,0,FALSE,FALSE
 Syria,https://flagcdn.com/w640/sy.png,0,3,4,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,0,0,0,0,2,0,0,FALSE,FALSE
