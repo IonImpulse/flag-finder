@@ -382,11 +382,15 @@ async function main() {
 
         let output = ``;
         
-        for (flag of flags_left) { 
-            output += `<div class="flag-frame">
+        if (flags_left.length == 0) {
+            output = `<div class="flag-frame"><div class="sub">No flags left!</div></div>`;
+        } else {
+            for (flag of flags_left) {
+                output += `<div class="flag-frame">
             <img src="${flag.URL}" width=320px>
             <div class="sub">${flag.Name}</div></div>
             `;
+            }
         }
 
         button_placeholder.innerHTML = "";
