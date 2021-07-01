@@ -206,7 +206,7 @@ function return_question(attribute) {
         type = "number";
 
     } else if (["red", "green", "blue", "yellow", "white", "black", "orange"].includes(attribute)){
-        question = `Does it contain the colour <attribute-flag><span style="background-color: ${attribute}">${attribute}?</span></attribute-flag>`;
+        question = `Does it contain the colour <attribute-flag class="flag-${attribute}">${attribute}?</attribute-flag>`;
         type = "bool";
 
     } else if (attribute == "contains_image") {
@@ -272,6 +272,8 @@ function setup() {
         contains_text: true,
     };
     let iterations = 0;
+
+    document.getElementById("answers-holder").innerHTML = "";
 
     sessionStorage.setItem("flags_left", JSON.stringify(flags_left));
     sessionStorage.setItem("attributes_available", JSON.stringify(attributes_available));
@@ -342,20 +344,22 @@ async function main() {
 
     let button_placeholder = document.getElementById("choices-holder");
 
-    if (flags_left.length < 5) {
+    if (flags_left.length <= 6) {
         let question_element = document.getElementById("question-holder");
         question_element.innerHTML = `<div id="question" class="good-button" onclick="setup()">RESULTS (Click to reset)</div>`;
 
         let output = ``;
         
         for (flag of flags_left) {
-            output += `
+            output += `<div class="flag-frame">
             <img src="${flag.URL}" width=320px>
-            <div class="sub">${flag.Name}</div>
+            <div class="sub">${flag.Name}</div></div>
             `;
         }
 
-        button_placeholder.innerHTML = output;
+        button_placeholder.innerHTML = "";
+
+        document.getElementById("answers-holder").innerHTML = output;
 
     } else if (!empty_attributes(attributes_available) && flags_left.length > 1 && iterations < 30) {
         
