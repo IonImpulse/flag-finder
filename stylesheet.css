@@ -9,6 +9,10 @@ body {
 number-flag {
     color:rgb(163, 255, 127);
 }
+
+attribute-flag {
+    color: #000000;
+}
 #top {
     font-family: 'JetBrains Mono', monospace;
     background-color: #27292e;

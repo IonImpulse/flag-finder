@@ -182,17 +182,17 @@ function return_question(attribute) {
 
     if (["bars", "stripes", "bars", "colours", "circles", "crosses", "saltires", "stars", "crescents", "triangles", "quarters"].includes(attribute)) {
         if (attribute == "bars") {
-            question = `How many vertical ${attribute} are present?`;
+            question = `How many vertical <attribute-flag>${attribute}</attribute-flag> are present?`;
         } else if (attribute == "stripes") {
-            question = `How many horizontal ${attribute} are present?`;
+            question = `How many horizontal <attribute-flag>${attribute}</attribute-flag> are present?`;
         } else {
-            question = `How many ${attribute} are present?`;
+            question = `How many <attribute-flag>${attribute}</attribute-flag> are present?`;
         }
 
         type = "number";
 
     } else if (["red", "green", "blue", "gold", "white", "black", "orange"].includes(attribute)){
-        question = `Does it contain the colour ${attribute}?`;
+        question = `Does it contain the colour <attribute-flag>${attribute}?</attribute-flag>`;
         type = "bool";
 
     } else if (attribute == "contains_image") {
