@@ -55,8 +55,8 @@ attribute-flag {
     max-width: 50%;
     margin: 0 auto;
     float: center;
-    margin-top: 2vmax;
-    margin-bottom: 2vmax;
+    margin-top: 1vmax;
+    margin-bottom: 1vmax;
     padding-bottom: 1vmax;
     letter-spacing: .05vmax;
     border-left: .2vmax solid white;
@@ -100,6 +100,16 @@ attribute-flag {
     margin: 3vmax;
 }
 
+.flag {
+    transition: all ease-in-out .3s, transform ease-in-out .1s
+}
+
+.flag:hover {
+    transform: translate(.2vmax, .2vmax);
+    box-shadow: .5vmax .5vmax #3C14D0;
+    cursor: pointer;
+}
+
 #answers-holder {
     display: flex;
     flex-flow: row;
@@ -112,7 +122,7 @@ attribute-flag {
     border: #eeeeee double 1vmax;
     opacity: 0;
     margin-top: 3vmax;
-    margin-bottom: 5vmax;
+    margin-bottom: 2vmax;
 }
 .ranked-pic {
     width: 13vmax;

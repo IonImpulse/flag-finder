@@ -68,22 +68,7 @@ async function view_click() {
     }
     
     let flags_left = JSON.parse(sessionStorage.getItem("flag_data"));
-    let question_element = document.getElementById("question-holder");
-    question_element.innerHTML = `<div id="question" class="good-button" onclick="setup()">RESULTS (Click to reset)</div>`;
-
-    let output = ``;
-    
-    for (flag of flags_left) { 
-        output += `<div class="flag-frame">
-        <img src="${flag.URL}" width=320px>
-        <div class="sub">${flag.Name}</div></div>
-        `;
-    }
-
-    document.getElementById("choices-holder").innerHTML = "";
-
-    document.getElementById("answers-holder").innerHTML = output;
-    document.getElementById("answers-holder").style.opacity = 100;
+    show_remaining_flags(flags_left);
 }
 
 function delete_button() {
@@ -317,6 +302,46 @@ function setup() {
 
     main();
 }
+
+function show_remaining_flags(flags_left) {
+    let question_element = document.getElementById("question-holder");
+    question_element.innerHTML = `<div id="question" class="good-button" onclick="setup()">RESULTS (Click to reset)</div>`;
+
+    let output = ``;
+    
+    if (flags_left.length == 0) {
+        output = `<div class="flag-frame"><div class="sub">No flags left!</div></div>`;
+    } else {
+        let flag_id = 0;
+        for (flag of flags_left) {
+            output += `<div class="flag-frame">
+        <img class="flag" id="flag-${flag_id}" src="${flag.URL}" onclick="show_information_about_flag('flag-${flag_id}')" width=320px>
+        <div class="sub">${flag.Name}</div></div>
+        `;
+            flag_id++;
+        }
+    }
+
+    document.getElementById("choices-holder").innerHTML = "";
+    document.getElementById("answers-holder").innerHTML = output;
+    document.getElementById("answers-holder").style.opacity = 100;
+}
+
+// function called when user clicks on a flag to show information about it
+function show_information_about_flag(flag_id) {
+    let flag_element = document.getElementById(flag_id);
+    
+    if (flag_element.style.filter != 'blur(10px)') {
+        flag_element.style.filter = 'blur(10px)';
+        
+    } else {
+        flag_element.style.filter = 'blur(0px)';
+    }
+
+    
+}
+
+
 async function main() {
     const yes_no_buttons = `
     <div>
@@ -378,26 +403,7 @@ async function main() {
     let button_placeholder = document.getElementById("choices-holder");
 
     if (flags_left.length <= 6) {
-        let question_element = document.getElementById("question-holder");
-        question_element.innerHTML = `<div id="question" class="good-button" onclick="setup()">RESULTS (Click to reset)</div>`;
-
-        let output = ``;
-        
-        if (flags_left.length == 0) {
-            output = `<div class="flag-frame"><div class="sub">No flags left!</div></div>`;
-        } else {
-            for (flag of flags_left) {
-                output += `<div class="flag-frame">
-            <img src="${flag.URL}" width=320px>
-            <div class="sub">${flag.Name}</div></div>
-            `;
-            }
-        }
-
-        button_placeholder.innerHTML = "";
-
-        document.getElementById("answers-holder").innerHTML = output;
-        document.getElementById("answers-holder").style.opacity = 100;
+        show_remaining_flags(flags_left);
 
     } else if (!empty_attributes(attributes_available) && flags_left.length > 1 && iterations < 30) {
         
