@@ -4,11 +4,11 @@ import json
 codes = open("codes.json")
 codes = json.load(codes)
 
-codes = {value.replace(" ", "-"): key for key, value in codes.items()}
+codes = {value.replace(" ", " "): key for key, value in codes.items()}
 
 print(codes)
 
-with open("flag.data.csv", "r", newline='', encoding="utf8") as f :
+with open("us_state_territory_flags.csv", "r", newline='', encoding="utf8") as f :
     flag_data = [row for row in csv.reader(f, delimiter = ',')]
 
 print(flag_data)
@@ -24,6 +24,6 @@ for row in flag_data :
         out_data.append(row)
         print("Couldn't do", row)
 
-with open("flag.database.csv", "w", encoding="utf8", newline="") as f :
+with open("us_state_territory_flags1.csv", "w", encoding="utf8", newline="") as f :
     csv_writer = csv.writer(f, dialect="excel")
     csv_writer.writerows(out_data)

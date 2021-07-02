@@ -20,6 +20,7 @@ async function start() {
         "countries.csv",
         "pride.csv",
         "misc.csv",
+        "us_state_territory_flags.csv",
     ];
 
     console.log("Loading data...");
@@ -78,6 +79,12 @@ async function view_click() {
         <div class="sub">${flag.Name}</div></div>
         `;
     }
+
+    output += `
+    <div class="sub">
+    Thanks to https://flagpedia.net/ for many of the flags used!
+        </div>
+    `;
 
     document.getElementById("choices-holder").innerHTML = "";
 
@@ -392,6 +399,12 @@ async function main() {
             `;
             }
         }
+
+        output += `
+        <div class="sub">
+                Thanks to https://flagpedia.net/ for many of the flags used!
+            </div>
+        `;
 
         button_placeholder.innerHTML = "";
 
