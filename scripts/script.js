@@ -80,12 +80,6 @@ async function view_click() {
         `;
     }
 
-    output += `
-    <div class="sub">
-    Thanks to https://flagpedia.net/ for many of the flags used!
-        </div>
-    `;
-
     document.getElementById("choices-holder").innerHTML = "";
 
     document.getElementById("answers-holder").innerHTML = output;
@@ -399,12 +393,6 @@ async function main() {
             `;
             }
         }
-
-        output += `
-        <div class="sub">
-                Thanks to https://flagpedia.net/ for many of the flags used!
-            </div>
-        `;
 
         button_placeholder.innerHTML = "";
 
