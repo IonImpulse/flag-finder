@@ -31,7 +31,37 @@ def get_colors(img) :
     img = img.quantize(colors=16, kmeans=16).convert('RGB')
     dom_colors = sorted(img.getcolors(2 ** 24), reverse=True)
     # get the rgb values out of the tuple
-    colors = [color[1] for color in dom_colors[:5]]
+    colors = [color[1] for color in dom_colors[:5] if color[0] > dom_colors[0][0] / 200]
+    return colors
+
+def process_svg(svg_text) :
+    colors = []
+    # find all fill statements in the svg
+    fill_pattern = re.compile(r'fill="(.*?)"')
+    stroke_pattern = re.compile(r'stroke="(.*?)"')
+    for match in fill_pattern.finditer(svg_text) :
+        color = match.group(1)
+
+        if color != "none" :
+            if color in CSS21_NAMES_TO_HEX.keys() :
+                color = CSS21_NAMES_TO_HEX[color]
+            # convert hex to rgb tuple
+            rgb_tuple = hex_to_rgb(color)
+            colors.append(rgb_tuple)
+            
+    for match in stroke_pattern.finditer(svg_text) :
+        color = match.group(1)
+
+        if color != "none" :
+            if color in CSS21_NAMES_TO_HEX.keys() :
+                color = CSS21_NAMES_TO_HEX[color]
+            # convert hex to rgb tuple
+            rgb_tuple = hex_to_rgb(color)
+            colors.append(rgb_tuple)
+
+    if svg_text.count("<path") == len(colors) + 1 :
+        print("added black")
+        colors.append((0,0,0))
     return colors
 
 if __name__ == '__main__':
@@ -53,16 +83,7 @@ if __name__ == '__main__':
             
             if row[1].endswith("svg") :
                 svg_text = r.content.decode("utf-8")
-                hex_colors = re.findall(r'fill="#(?:[0-9a-fA-F]{3}){1,2}"', svg_text)
-                temp_list = []
-                for hex_color in hex_colors:
-                    # convert hex color to rgb tuple usable by PIL
-                    color = hex_to_rgb(hex_color[6:-1])
-                    temp_list.append(color)
-                
-                temp_list = list(set(temp_list))
-                colors_list.append(temp_list)
-
+                colors_list.append(process_svg(svg_text))
             else :
                 try :
                     img = Image.open(BytesIO(r.content))
@@ -75,17 +96,7 @@ if __name__ == '__main__':
                 # get the svg file and find all hex color codes in it
                 with open("../" + row[1], 'r') as svg_file:
                     svg_text = "".join(svg_file.readlines())
-                    hex_colors = re.findall(r'fill="#(?:[0-9a-fA-F]{3}){1,2}"', svg_text)
-                    temp_list = []
-                    for hex_color in hex_colors:
-                        # convert hex color to rgb tuple usable by PIL
-                        print(hex_color[6:-1])
-                        color = hex_to_rgb(hex_color[6:-1])
-                        temp_list.append(color)
-
-                    
-                    temp_list = list(set(temp_list))
-                    colors_list.append(temp_list)
+                    colors_list.append(process_svg(svg_text))
             else :      
                 img = Image.open("../" + row[1])
                 colors_list.append(get_colors(img))
@@ -105,7 +116,7 @@ if __name__ == '__main__':
             elif color == "aqua" :
                 color_names.append("blue")
             elif color == "gray" :
-                color_names.append("black")
+                color_names.append("white")
             elif color == "green"  or color == "lime" or color == "teal":
                 color_names.append("green/teal")
             elif color == "fuchsia" :
@@ -122,6 +133,22 @@ if __name__ == '__main__':
         color_names = list(set(color_names))
 
         name_list.append(color_names)
+    
+    header = ["Name","URL","red","greenteal","blue","white","black","orangeyellow","purple","bars","stripes","circles","crosses","saltires","quarters","stars","crescents","triangles","contains_image","contains_text"]
+    # write out a new file with the correct colors
+    with open(input_file + "_processed.csv", 'w', newline="") as csv_file:
+        writer = csv.writer(csv_file)
+        writer.writerow(header)
+        for i in range(len(rows) - 1) :
+            row_to_write = [rows[i + 1][0], rows[i + 1][1]]
 
-    for i in range(len(name_list)) :
-        print(f"{rows[i + 1][0]} has the colours {name_list[i]}")
+            if len(name_list[i]) > 0 :
+                for j in ["red","green/teal","blue","white","black","orange/yellow","purple"] :
+                    if j in name_list[i] :
+                        row_to_write.append("TRUE")
+                    else :
+                        row_to_write.append("FALSE")
+            else :
+                print(rows[i + 1][0] + " has no colors.")
+            
+            writer.writerow(row_to_write)

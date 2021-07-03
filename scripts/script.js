@@ -19,7 +19,7 @@ async function start() {
     const FLAG_FILES = [
         "countries.csv",
         "pride.csv",
-        "misc.csv",
+        "organizations.csv",
         "us_state_territory_flags.csv",
     ];
 
@@ -222,8 +222,15 @@ function return_question(attribute) {
 
         type = "number";
 
-    } else if (["red", "green", "blue", "yellow", "white", "black", "orange"].includes(attribute)){
-        question = `Does it contain the colour <attribute-flag class="flag-${attribute}">${attribute}?</attribute-flag>`;
+    } else if (["red","greenteal","blue","white","black","orangeyellow","purple"].includes(attribute)){
+        if (attribute == "greenteal") {
+            question = `Does it contain either colour <attribute-flag class="flag-green">green</attribute-flag> or <attribute-flag class="flag-teal">teal?</attribute-flag>`;
+        } else if (attribute == "orangeyellow") {
+            question = `Does it contain either colour <attribute-flag class="flag-orange">orange</attribute-flag> or <attribute-flag class="flag-yellow">yellow?</attribute-flag>`;
+        } else {
+            question = `Does it contain the colour <attribute-flag class="flag-${attribute}">${attribute}?</attribute-flag>`;
+        }
+
         type = "bool";
 
     } else if (attribute == "contains_image") {
@@ -269,16 +276,15 @@ function setup() {
     let attributes_available = {
         name: true,
         url: true,
-        bars: true,
-        stripes: true,
-        colours: true,
         red: true,
-        green: true,
+        greenteal: true,
         blue: true,
-        yellow: true,
         white: true,
         black: true,
-        orange: true,
+        orangeyellow: true,
+        purple: true,
+        bars: true,
+        stripes: true,
         circles: true,
         crosses: true,
         saltires: true,

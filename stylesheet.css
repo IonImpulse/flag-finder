@@ -24,6 +24,10 @@ attribute-flag {
     background-color:rgb(25, 68, 8);
 }
 
+.flag-teal {
+    background-color:rgb(8, 68, 63);
+}
+
 .flag-blue {
     background-color: rgb(11, 11, 131);
 }
@@ -46,6 +50,9 @@ attribute-flag {
     background-color: rgb(214, 101, 8);
 }
 
+.flag-purple {
+    background-color:rgb(66, 8, 68);
+}
 #top {
     font-family: 'JetBrains Mono', monospace;
     background-color: #27292e;

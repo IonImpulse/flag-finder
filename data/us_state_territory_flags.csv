@@ -1,51 +1,51 @@
-Name,URL,bars,stripes,colours,red,green,blue,yellow,white,black,orange,circles,crosses,saltires,quarters,stars,crescents,triangles,contains_image,contains_text
-Alabama,https://flagcdn.com/w640/us-al.png,0,0,2,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,0,0,1,0,0,0,0,FALSE,FALSE
-Alaska,https://flagcdn.com/w640/us-ak.png,0,0,2,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,0,0,0,0,8,0,0,FALSE,FALSE
-Arizona,https://flagcdn.com/w640/us-az.png,0,2,4,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,TRUE,0,0,0,0,0,0,0,FALSE,FALSE
-Arkansas,https://flagcdn.com/w640/us-ar.png,0,0,3,TRUE,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,0,0,0,0,29,0,0,FALSE,TRUE
-California,https://flagcdn.com/w640/us-ca.png,0,1,5,TRUE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,0,0,0,0,1,0,0,TRUE,TRUE
-Colorado,https://flagcdn.com/w640/us-co.png,0,3,4,TRUE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,1,0,0,0,0,0,0,FALSE,FALSE
-Connecticut,https://flagcdn.com/w640/us-ct.png,0,0,5,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,0,0,0,0,0,0,0,TRUE,TRUE
-Delaware,https://flagcdn.com/w640/us-de.png,0,0,3,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,0,0,0,0,0,0,0,TRUE,TRUE
-Florida,https://flagcdn.com/w640/us-fl.png,0,0,3,TRUE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,1,0,1,0,0,0,0,TRUE,TRUE
-Georgia,https://flagcdn.com/w640/us-ga.png,0,3,4,TRUE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,0,1,1,1,13,0,0,TRUE,TRUE
-Hawaii,https://flagcdn.com/w640/us-hi.png,0,8,3,TRUE,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,0,0,0,1,0,0,0,FALSE,FALSE
-Idaho,https://flagcdn.com/w640/us-id.png,0,0,3,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE,1,0,0,0,0,0,0,TRUE,TRUE
-Illinois,https://flagcdn.com/w640/us-il.png,0,0,2,TRUE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,0,0,0,0,0,0,0,TRUE,TRUE
-Indiana,https://flagcdn.com/w640/us-in.png,0,0,2,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,0,0,0,0,18,0,0,TRUE,TRUE
-Iowa,https://flagcdn.com/w640/us-ia.png,3,0,3,TRUE,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,0,0,0,0,0,0,0,TRUE,TRUE
-Kansas,https://flagcdn.com/w640/us-ks.png,0,0,2,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,1,0,0,1,0,0,0,TRUE,TRUE
-Kentucky,https://flagcdn.com/w640/us-ky.png,0,0,4,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,1,0,0,0,0,0,0,TRUE,TRUE
-Louisiana,https://flagcdn.com/w640/us-la.png,0,0,2,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,0,0,0,0,0,0,0,TRUE,TRUE
-Maine,https://flagcdn.com/w640/us-me.png,0,0,2,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,1,0,0,0,0,0,0,TRUE,TRUE
-Maryland,https://flagcdn.com/w640/us-md.png,0,0,4,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,0,2,0,4,0,0,0,FALSE,FALSE
-Massachusetts,https://flagcdn.com/w640/us-ma.png,0,0,3,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,0,0,0,0,0,0,0,TRUE,TRUE
-Michigan,https://flagcdn.com/w640/us-mi.png,0,0,3,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,0,0,0,0,0,0,0,TRUE,TRUE
-Minnesota,https://flagcdn.com/w640/us-mn.png,0,0,3,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,1,0,0,0,19,0,0,TRUE,TRUE
-Mississippi,https://flagcdn.com/w640/us-ms.png,5,0,4,TRUE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,0,0,0,0,21,0,0,TRUE,TRUE
-Missouri,https://flagcdn.com/w640/us-mo.png,0,3,3,TRUE,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,1,0,0,0,24,0,0,TRUE,TRUE
-Montana,https://flagcdn.com/w640/us-mt.png,0,0,2,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE,1,0,0,0,0,0,0,TRUE,TRUE
-Nebraska,https://flagcdn.com/w640/us-ne.png,0,0,2,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE,1,0,0,0,0,0,0,TRUE,TRUE
-Nevada,https://flagcdn.com/w640/us-nv.png,0,0,4,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,0,0,0,0,1,0,0,TRUE,TRUE
-New Hampshire,https://flagcdn.com/w640/us-nh.png,0,0,3,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,0,0,0,0,11,0,0,TRUE,TRUE
-New Jersey,https://flagcdn.com/w640/us-nj.png,0,0,2,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE,0,0,0,0,0,0,0,TRUE,TRUE
-New Mexico,https://flagcdn.com/w640/us-nm.png,0,0,2,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,1,0,0,0,0,0,0,TRUE,FALSE
-New York,https://flagcdn.com/w640/us-ny.png,0,0,2,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,0,0,0,0,0,0,0,TRUE,TRUE
-North Carolina,https://flagcdn.com/w640/us-nc.png,1,2,4,TRUE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,0,0,0,0,1,0,0,FALSE,TRUE
-North Dakota,https://flagcdn.com/w640/us-nd.png,0,0,2,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,0,0,0,0,13,0,0,TRUE,TRUE
-Ohio,https://flagcdn.com/w640/us-oh.png,0,5,3,TRUE,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,2,0,0,0,17,0,1,FALSE,FALSE
-Oklahoma,https://flagcdn.com/w640/us-ok.png,0,0,3,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,1,0,0,0,0,0,0,TRUE,TRUE
-Oregon,https://flagcdn.com/w640/us-or.png,0,0,2,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE,0,0,0,0,33,0,0,TRUE,TRUE
-Pennsylvania,https://flagcdn.com/w640/us-pa.png,0,0,4,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE,0,0,0,0,0,0,0,TRUE,TRUE
-Rhode Island,https://flagcdn.com/w640/us-ri.png,0,0,3,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,0,0,0,0,13,0,0,TRUE,TRUE
-South Carolina,https://flagcdn.com/w640/us-sc.png,0,0,2,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,0,0,0,0,0,1,0,TRUE,FALSE
-South Dakota,https://flagcdn.com/w640/us-sd.png,0,0,3,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,0,0,0,0,0,0,0,TRUE,TRUE
-Tennessee,https://flagcdn.com/w640/us-tn.png,1,0,3,TRUE,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,1,0,0,0,3,0,0,FALSE,FALSE
-Texas,https://flagcdn.com/w640/us-tx.png,1,2,3,TRUE,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,0,0,0,0,1,0,0,FALSE,FALSE
-Utah,https://flagcdn.com/w640/us-ut.png,0,0,2,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,1,0,0,0,45,0,0,TRUE,TRUE
-Vermont,https://flagcdn.com/w640/us-vt.png,0,0,3,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,0,0,0,0,0,0,0,TRUE,TRUE
-Virginia,https://flagcdn.com/w640/us-va.png,0,0,4,TRUE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,1,0,0,0,0,0,0,TRUE,TRUE
-Washington,https://flagcdn.com/w640/us-wa.png,0,0,3,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE,1,0,0,0,0,0,0,TRUE,TRUE
-West Virginia,https://flagcdn.com/w640/us-wv.png,0,0,5,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,0,0,0,0,0,0,0,TRUE,TRUE
-Wisconsin,https://flagcdn.com/w640/us-wi.png,0,0,2,FALSE,FALSE,TRUE,FALSE,TRUE,TRUE,FALSE,0,0,0,0,0,0,0,TRUE,TRUE
-Wyoming,https://flagcdn.com/w640/us-wy.png,0,0,3,TRUE,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,0,0,0,0,0,0,0,TRUE,TRUE
+Name,URL,red,greenteal,blue,white,black,orangeyellow,purple,bars,stripes,circles,crosses,saltires,quarters,stars,crescents,triangles,contains_image,contains_text
+Alabama,https://flagcdn.com/w640/us-al.png,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,0,0,0,0,1,0,0,0,0,FALSE,FALSE
+Alaska,https://flagcdn.com/w640/us-ak.png,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,0,0,0,0,0,0,8,0,0,FALSE,FALSE
+Arizona,https://flagcdn.com/w640/us-az.png,TRUE,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,0,2,0,0,0,0,0,0,0,FALSE,FALSE
+Arkansas,https://flagcdn.com/w640/us-ar.png,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE,0,0,0,0,0,0,29,0,0,FALSE,TRUE
+California,https://flagcdn.com/w640/us-ca.png,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,0,1,0,0,0,0,1,0,0,TRUE,TRUE
+Colorado,https://flagcdn.com/w640/us-co.png,TRUE,FALSE,TRUE,TRUE,FALSE,TRUE,FALSE,0,3,1,0,0,0,0,0,0,FALSE,FALSE
+Connecticut,https://flagcdn.com/w640/us-ct.png,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,0,0,0,0,0,0,0,0,0,TRUE,TRUE
+Delaware,https://flagcdn.com/w640/us-de.png,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,0,0,0,0,0,0,0,0,0,TRUE,TRUE
+Florida,https://flagcdn.com/w640/us-fl.png,TRUE,TRUE,FALSE,TRUE,FALSE,TRUE,FALSE,0,0,1,0,1,0,0,0,0,TRUE,TRUE
+Georgia,https://flagcdn.com/w640/us-ga.png,TRUE,FALSE,TRUE,TRUE,FALSE,TRUE,FALSE,0,3,0,1,1,1,13,0,0,TRUE,TRUE
+Hawaii,https://flagcdn.com/w640/us-hi.png,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE,0,8,0,0,0,1,0,0,0,FALSE,FALSE
+Idaho,https://flagcdn.com/w640/us-id.png,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,0,0,1,0,0,0,0,0,0,TRUE,TRUE
+Illinois,https://flagcdn.com/w640/us-il.png,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,0,0,0,0,0,0,0,0,0,TRUE,TRUE
+Indiana,https://flagcdn.com/w640/us-in.png,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,0,0,0,0,0,0,18,0,0,TRUE,TRUE
+Iowa,https://flagcdn.com/w640/us-ia.png,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE,3,0,0,0,0,0,0,0,0,TRUE,TRUE
+Kansas,https://flagcdn.com/w640/us-ks.png,FALSE,FALSE,TRUE,TRUE,FALSE,TRUE,FALSE,0,0,1,0,0,1,0,0,0,TRUE,TRUE
+Kentucky,https://flagcdn.com/w640/us-ky.png,FALSE,TRUE,TRUE,TRUE,FALSE,TRUE,FALSE,0,0,1,0,0,0,0,0,0,TRUE,TRUE
+Louisiana,https://flagcdn.com/w640/us-la.png,FALSE,TRUE,FALSE,TRUE,FALSE,TRUE,FALSE,0,0,0,0,0,0,0,0,0,TRUE,TRUE
+Maine,https://flagcdn.com/w640/us-me.png,FALSE,FALSE,TRUE,TRUE,FALSE,TRUE,FALSE,0,0,1,0,0,0,0,0,0,TRUE,TRUE
+Maryland,https://flagcdn.com/w640/us-md.png,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,0,0,0,2,0,4,0,0,0,FALSE,FALSE
+Massachusetts,https://flagcdn.com/w640/us-ma.png,FALSE,FALSE,TRUE,TRUE,FALSE,TRUE,FALSE,0,0,0,0,0,0,0,0,0,TRUE,TRUE
+Michigan,https://flagcdn.com/w640/us-mi.png,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE,0,0,0,0,0,0,0,0,0,TRUE,TRUE
+Minnesota,https://flagcdn.com/w640/us-mn.png,TRUE,TRUE,FALSE,TRUE,FALSE,TRUE,FALSE,0,0,1,0,0,0,19,0,0,TRUE,TRUE
+Mississippi,https://flagcdn.com/w640/us-ms.png,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,5,0,0,0,0,0,21,0,0,TRUE,TRUE
+Missouri,https://flagcdn.com/w640/us-mo.png,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,0,3,1,0,0,0,24,0,0,TRUE,TRUE
+Montana,https://flagcdn.com/w640/us-mt.png,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,0,0,1,0,0,0,0,0,0,TRUE,TRUE
+Nebraska,https://flagcdn.com/w640/us-ne.png,FALSE,FALSE,TRUE,TRUE,FALSE,TRUE,FALSE,0,0,1,0,0,0,0,0,0,TRUE,TRUE
+Nevada,https://flagcdn.com/w640/us-nv.png,FALSE,TRUE,TRUE,TRUE,FALSE,TRUE,FALSE,0,0,0,0,0,0,1,0,0,TRUE,TRUE
+New Hampshire,https://flagcdn.com/w640/us-nh.png,FALSE,TRUE,TRUE,TRUE,FALSE,TRUE,FALSE,0,0,0,0,0,0,11,0,0,TRUE,TRUE
+New Jersey,https://flagcdn.com/w640/us-nj.png,FALSE,TRUE,FALSE,TRUE,FALSE,TRUE,FALSE,0,0,0,0,0,0,0,0,0,TRUE,TRUE
+New Mexico,https://flagcdn.com/w640/us-nm.png,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,0,0,1,0,0,0,0,0,0,TRUE,FALSE
+New York,https://flagcdn.com/w640/us-ny.png,TRUE,TRUE,TRUE,TRUE,FALSE,TRUE,FALSE,0,0,0,0,0,0,0,0,0,TRUE,TRUE
+North Carolina,https://flagcdn.com/w640/us-nc.png,TRUE,FALSE,TRUE,TRUE,FALSE,TRUE,FALSE,1,2,0,0,0,0,1,0,0,FALSE,TRUE
+North Dakota,https://flagcdn.com/w640/us-nd.png,TRUE,FALSE,TRUE,FALSE,TRUE,TRUE,FALSE,0,0,0,0,0,0,13,0,0,TRUE,TRUE
+Ohio,https://flagcdn.com/w640/us-oh.png,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE,0,5,2,0,0,0,17,0,1,FALSE,FALSE
+Oklahoma,https://flagcdn.com/w640/us-ok.png,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,0,0,1,0,0,0,0,0,0,TRUE,TRUE
+Oregon,https://flagcdn.com/w640/us-or.png,FALSE,TRUE,TRUE,TRUE,FALSE,TRUE,FALSE,0,0,0,0,0,0,33,0,0,TRUE,TRUE
+Pennsylvania,https://flagcdn.com/w640/us-pa.png,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,0,0,0,0,0,0,0,0,0,TRUE,TRUE
+Rhode Island,https://flagcdn.com/w640/us-ri.png,FALSE,FALSE,TRUE,TRUE,FALSE,TRUE,FALSE,0,0,0,0,0,0,13,0,0,TRUE,TRUE
+South Carolina,https://flagcdn.com/w640/us-sc.png,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE,0,0,0,0,0,0,0,1,0,TRUE,FALSE
+South Dakota,https://flagcdn.com/w640/us-sd.png,FALSE,TRUE,FALSE,TRUE,FALSE,TRUE,FALSE,0,0,0,0,0,0,0,0,0,TRUE,TRUE
+Tennessee,https://flagcdn.com/w640/us-tn.png,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE,1,0,1,0,0,0,3,0,0,FALSE,FALSE
+Texas,https://flagcdn.com/w640/us-tx.png,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE,1,2,0,0,0,0,1,0,0,FALSE,FALSE
+Utah,https://flagcdn.com/w640/us-ut.png,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,0,0,1,0,0,0,45,0,0,TRUE,TRUE
+Vermont,https://flagcdn.com/w640/us-vt.png,TRUE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,0,0,0,0,0,0,0,0,0,TRUE,TRUE
+Virginia,https://flagcdn.com/w640/us-va.png,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE,0,0,1,0,0,0,0,0,0,TRUE,TRUE
+Washington,https://flagcdn.com/w640/us-wa.png,FALSE,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,0,0,1,0,0,0,0,0,0,TRUE,TRUE
+West Virginia,https://flagcdn.com/w640/us-wv.png,TRUE,TRUE,TRUE,TRUE,FALSE,TRUE,FALSE,0,0,0,0,0,0,0,0,0,TRUE,TRUE
+Wisconsin,https://flagcdn.com/w640/us-wi.png,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,0,0,0,0,0,0,0,0,0,TRUE,TRUE
+Wyoming,https://flagcdn.com/w640/us-wy.png,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE,0,0,0,0,0,0,0,0,0,TRUE,TRUE

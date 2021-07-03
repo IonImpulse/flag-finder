@@ -1,27 +1,27 @@
-Name,URL,bars,stripes,colours,red,green,blue,yellow,white,black,orange,circles,crosses,saltires,quarters,stars,crescents,triangles,contains_image,contains_text
-Agender,flag-photos/pride/agender_2014.svg,0,7,4,FALSE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,0,0,0,0,0,0,0,FALSE,FALSE
-Aromantic,flag-photos/pride/aromantic_2014.svg,0,5,5,FALSE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,0,0,0,0,0,0,0,FALSE,FALSE
-Asexual,flag-photos/pride/asexual_2010.svg,0,4,4,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,0,0,0,0,0,0,0,FALSE,FALSE
-Bisexual,flag-photos/pride/bisexual_1998.svg,0,3,3,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,0,0,0,0,0,0,0,FALSE,FALSE
-Genderfluid,flag-photos/pride/genderfluid_2012.svg,0,5,5,FALSE,FALSE,TRUE,FALSE,TRUE,TRUE,FALSE,0,0,0,0,0,0,0,FALSE,FALSE
-Genderqueer,flag-photos/pride/genderqueer_2011.svg,0,3,3,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,0,0,0,0,0,0,0,FALSE,FALSE
-Intersex,flag-photos/pride/intersex_2013.svg,0,0,2,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,1,0,0,0,0,0,0,FALSE,FALSE
-Labrys Lesbian,flag-photos/pride/labrysLesbian_1999.svg,0,0,3,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,0,0,0,0,0,0,1,TRUE,FALSE
-Lesbian (2010),flag-photos/pride/lesbian_2010.svg,0,7,7,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,TRUE,0,0,0,0,0,0,0,FALSE,FALSE
-Lesbian (2018),flag-photos/pride/lesbian_2018.svg,0,7,7,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,TRUE,0,0,0,0,0,0,0,FALSE,FALSE
-Lesbian,flag-photos/pride/lesbian_2019.svg,0,5,5,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,TRUE,0,0,0,0,0,0,0,FALSE,FALSE
-Nonbinary,flag-photos/pride/nonbinary_2014.svg,0,4,4,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,0,0,0,0,0,0,0,FALSE,FALSE
-Pansexual,flag-photos/pride/pansexual_2010.svg,0,3,2,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE,0,0,0,0,0,0,0,FALSE,FALSE
-Philadelphia Pride,flag-photos/pride/philadelphiaPride_2017.svg,0,8,8,TRUE,TRUE,TRUE,TRUE,FALSE,TRUE,TRUE,0,0,0,0,0,0,0,FALSE,FALSE
-Pink Union Jack,flag-photos/pride/pinkUnionJack_2009.svg,0,0,3,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,0,1,1,0,0,0,0,FALSE,FALSE
-Polysexual,flag-photos/pride/polysexual_2012.svg,0,3,3,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,0,0,0,0,0,0,0,FALSE,FALSE
-Pride (1978) 8 Stripes,flag-photos/pride/pride_1978_eightStripes.svg,0,8,8,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE,TRUE,0,0,0,0,0,0,0,FALSE,FALSE
-Pride (1978),flag-photos/pride/pride_1978_sevenStripes.svg,0,7,7,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE,TRUE,0,0,0,0,0,0,0,FALSE,FALSE
-Pride,flag-photos/pride/pride_1979.svg,0,6,6,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE,TRUE,0,0,0,0,0,0,0,FALSE,FALSE
-Progress Pride,flag-photos/pride/progressPride_2018.svg,0,6,11,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,0,0,0,0,0,0,5,FALSE,FALSE
-South African Pride,flag-photos/pride/southAfricaPride_2010.svg,0,6,8,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,0,0,0,0,0,0,1,FALSE,FALSE
-Transgender,flag-photos/pride/transgender_1999.svg,0,5,3,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,0,0,0,0,0,0,0,FALSE,FALSE
-Polyamorous (1995),flag-photos/pride/Polyflag.webp,0,3,4,TRUE,FALSE,TRUE,TRUE,FALSE,TRUE,FALSE,0,0,0,0,0,0,0,TRUE,FALSE
-Polyamorous (2020),flag-photos/pride/Polyamorous_Flag_2020.svg,0,3,4,TRUE,FALSE,TRUE,TRUE,FALSE,TRUE,FALSE,0,0,0,0,0,0,0,TRUE,FALSE
-Men-Loving Man,flag-photos/pride/MLM_flag.png,0,7,7,FALSE,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,0,0,0,0,0,0,0,FALSE,FALSE
-Demisexual,flag-photos/pride/Demiflag.webp,0,3,4,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,0,0,0,0,0,0,1,FALSE,FALSE
+Name,URL,red,greenteal,blue,white,black,orangeyellow,purple,bars,stripes,circles,crosses,saltires,quarters,stars,crescents,triangles,contains_image,contains_text
+Agender,flag-photos/pride/agender_2014.svg,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,0,7,0,0,0,0,0,0,0,FALSE,FALSE
+Aromantic,flag-photos/pride/aromantic_2014.svg,FALSE,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,0,5,0,0,0,0,0,0,0,FALSE,FALSE
+Asexual,flag-photos/pride/asexual_2010.svg,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,TRUE,0,4,0,0,0,0,0,0,0,FALSE,FALSE
+Bisexual,flag-photos/pride/bisexual_1998.svg,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,TRUE,0,3,0,0,0,0,0,0,0,FALSE,FALSE
+Genderfluid,flag-photos/pride/genderfluid_2012.svg,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,TRUE,0,5,0,0,0,0,0,0,0,FALSE,FALSE
+Genderqueer,flag-photos/pride/genderqueer_2011.svg,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,0,3,0,0,0,0,0,0,0,FALSE,FALSE
+Intersex,flag-photos/pride/intersex_2013.svg,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,0,0,1,0,0,0,0,0,0,FALSE,FALSE
+Labrys Lesbian,flag-photos/pride/labrysLesbian_1999.svg,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,TRUE,0,0,0,0,0,0,0,0,1,TRUE,FALSE
+Lesbian (2010),flag-photos/pride/lesbian_2010.svg,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE,0,7,0,0,0,0,0,0,0,FALSE,FALSE
+Lesbian (2018),flag-photos/pride/lesbian_2018.svg,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,TRUE,0,7,0,0,0,0,0,0,0,FALSE,FALSE
+Lesbian,flag-photos/pride/lesbian_2019.svg,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,TRUE,0,5,0,0,0,0,0,0,0,FALSE,FALSE
+Nonbinary,flag-photos/pride/nonbinary_2014.svg,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,0,4,0,0,0,0,0,0,0,FALSE,FALSE
+Pansexual,flag-photos/pride/pansexual_2010.svg,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE,TRUE,0,3,0,0,0,0,0,0,0,FALSE,FALSE
+Philadelphia Pride,flag-photos/pride/philadelphiaPride_2017.svg,TRUE,TRUE,TRUE,FALSE,TRUE,TRUE,TRUE,0,8,0,0,0,0,0,0,0,FALSE,FALSE
+Pink Union Jack,flag-photos/pride/pinkUnionJack_2009.svg,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,0,0,0,1,1,0,0,0,0,FALSE,FALSE
+Polysexual,flag-photos/pride/polysexual_2012.svg,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE,TRUE,0,3,0,0,0,0,0,0,0,FALSE,FALSE
+Pride (1978) 8 Stripes,flag-photos/pride/pride_1978_eightStripes.svg,TRUE,TRUE,TRUE,TRUE,FALSE,TRUE,TRUE,0,8,0,0,0,0,0,0,0,FALSE,FALSE
+Pride (1978),flag-photos/pride/pride_1978_sevenStripes.svg,TRUE,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,0,7,0,0,0,0,0,0,0,FALSE,FALSE
+Pride,flag-photos/pride/pride_1979.svg,TRUE,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,0,6,0,0,0,0,0,0,0,FALSE,FALSE
+Progress Pride,flag-photos/pride/progressPride_2018.svg,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,0,6,0,0,0,0,0,0,5,FALSE,FALSE
+South African Pride,flag-photos/pride/southAfricaPride_2010.svg,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,0,6,0,0,0,0,0,0,1,FALSE,FALSE
+Transgender,flag-photos/pride/transgender_1999.svg,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE,0,5,0,0,0,0,0,0,0,FALSE,FALSE
+Polyamorous (1995),flag-photos/pride/Polyflag.webp,TRUE,FALSE,TRUE,FALSE,TRUE,TRUE,FALSE,0,3,0,0,0,0,0,0,0,TRUE,FALSE
+Polyamorous (2020),flag-photos/pride/Polyamorous_Flag_2020.svg,TRUE,FALSE,TRUE,FALSE,TRUE,TRUE,FALSE,0,3,0,0,0,0,0,0,0,TRUE,FALSE
+Men-Loving Man,flag-photos/pride/MLM_flag.png,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,FALSE,0,7,0,0,0,0,0,0,0,FALSE,FALSE
+Demisexual,flag-photos/pride/Demiflag.webp,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,TRUE,0,3,0,0,0,0,0,0,1,FALSE,FALSE
