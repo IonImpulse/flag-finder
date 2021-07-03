@@ -2,7 +2,6 @@ import PIL
 from scipy.spatial import KDTree
 from webcolors import (
     CSS21_NAMES_TO_HEX,
-    HTML4_NAMES_TO_HEX,
     hex_to_rgb,
 )
 import requests
@@ -20,7 +19,6 @@ def convert_rgb_to_names(rgb_tuple):
     
     for color_name, color_hex in css3_db.items():
         names.append(color_name)
-        print(color_hex, color_name)
         rgb_values.append(hex_to_rgb(color_hex))
     
     kdt_db = KDTree(rgb_values)    
@@ -28,11 +26,10 @@ def convert_rgb_to_names(rgb_tuple):
     distance, index = kdt_db.query(rgb_tuple)
     return f'closest match: {names[index]}'
 
-def get_colors(img, numcolors=100) :
+def get_colors(img) :
    # Reduce to palette
     img = img.quantize(colors=16, kmeans=16).convert('RGB')
-    n_dom_colors = 16
-    dom_colors = sorted(img.getcolors(2 ** 24), reverse=True)[:n_dom_colors]
+    dom_colors = sorted(img.getcolors(2 ** 24), reverse=True)
     # get the rgb values out of the tuple
     colors = [color[1] for color in dom_colors[:5]]
     return colors
@@ -69,9 +66,10 @@ if __name__ == '__main__':
             else :
                 try :
                     img = Image.open(BytesIO(r.content))
-                    colors_list.append(get_colors(img, numcolors=100))
+                    colors_list.append(get_colors(img))
                 except PIL.UnidentifiedImageError :
                     print(row[1] + " is not an image.")
+                    colors_list.append([])
         else :
             if row[1].endswith("svg") :
                 # get the svg file and find all hex color codes in it
@@ -81,18 +79,16 @@ if __name__ == '__main__':
                     temp_list = []
                     for hex_color in hex_colors:
                         # convert hex color to rgb tuple usable by PIL
+                        print(hex_color[6:-1])
                         color = hex_to_rgb(hex_color[6:-1])
                         temp_list.append(color)
+
                     
                     temp_list = list(set(temp_list))
                     colors_list.append(temp_list)
             else :      
                 img = Image.open("../" + row[1])
-                colors_list.append(get_colors(img, numcolors=100))
-        
-
-    for i in colors_list :
-        print(i)
+                colors_list.append(get_colors(img))
 
     name_list = []
     for color_list in colors_list :
@@ -109,20 +105,21 @@ if __name__ == '__main__':
             elif color == "aqua" :
                 color_names.append("blue")
             elif color == "gray" :
-                color_names.append("white")
-            elif color == "lime" :   
-                color_names.append("green")
+                color_names.append("black")
+            elif color == "green"  or color == "lime" or color == "teal":
+                color_names.append("green/teal")
             elif color == "fuchsia" :
                 color_names.append("purple")
             elif color == "navy" :
                 color_names.append("blue")
             elif color == "silver" :
                 color_names.append("white")
-            else :
+            elif color == "orange" or color == "yellow":
+                color_names.append("orange/yellow")
+            elif color != "olive" :
                 color_names.append(color)
 
         color_names = list(set(color_names))
-        print(color_names)
 
         name_list.append(color_names)
 
