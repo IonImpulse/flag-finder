@@ -31,7 +31,7 @@ def get_colors(img) :
     img = img.quantize(colors=16, kmeans=16).convert('RGB')
     dom_colors = sorted(img.getcolors(2 ** 24), reverse=True)
     # get the rgb values out of the tuple
-    colors = [color[1] for color in dom_colors[:5] if color[0] > dom_colors[0][0] / 200]
+    colors = [color[1] for color in dom_colors if color[0] > dom_colors[0][0] / 100]
     return colors
 
 def process_svg(svg_text) :
@@ -113,11 +113,11 @@ if __name__ == '__main__':
         for color in temp_list :
             if color == "maroon" :
                 color_names.append("red")
-            elif color == "aqua" :
+            elif color == "aqua" or color == "aquamarine" :
                 color_names.append("blue")
             elif color == "gray" :
                 color_names.append("white")
-            elif color == "green"  or color == "lime" or color == "teal":
+            elif color == "green"  or color == "lime" or color == "teal" or color == "olive":
                 color_names.append("green/teal")
             elif color == "fuchsia" :
                 color_names.append("purple")
@@ -127,7 +127,7 @@ if __name__ == '__main__':
                 color_names.append("white")
             elif color == "orange" or color == "yellow":
                 color_names.append("orange/yellow")
-            elif color != "olive" :
+            else :
                 color_names.append(color)
 
         color_names = list(set(color_names))

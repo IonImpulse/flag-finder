@@ -2,12 +2,12 @@ Name,URL,red,greenteal,blue,white,black,orangeyellow,purple,bars,stripes,circles
 Afghanistan,https://flagcdn.com/w640/af.png,TRUE,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,0,3,0,0,0,0,1,0,0,TRUE,FALSE
 Albania,https://flagcdn.com/w640/al.png,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,0,0,0,0,0,0,1,0,0,FALSE,FALSE
 Algeria,https://flagcdn.com/w640/dz.png,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,2,0,0,0,0,0,1,1,0,FALSE,FALSE
-American Samoa,https://flagcdn.com/w640/as.png,TRUE,FALSE,TRUE,TRUE,FALSE,TRUE,FALSE,0,0,0,0,0,0,0,0,1,TRUE,FALSE
+American Samoa,https://flagcdn.com/w640/as.png,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,0,0,0,0,0,0,0,0,1,TRUE,FALSE
 Andorra,https://flagcdn.com/w640/ad.png,TRUE,FALSE,TRUE,TRUE,FALSE,TRUE,FALSE,3,0,0,0,0,0,0,0,0,FALSE,FALSE
 Angola,https://flagcdn.com/w640/ao.png,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,0,2,0,0,0,0,1,0,0,TRUE,FALSE
 Anguilla,https://flagcdn.com/w640/ai.png,TRUE,FALSE,TRUE,TRUE,FALSE,TRUE,FALSE,0,1,0,0,0,0,0,0,0,FALSE,FALSE
-Antigua Barbuda,flag-photos/countries/AntiguaBarbuda.png,TRUE,TRUE,FALSE,TRUE,TRUE,TRUE,FALSE,0,1,0,0,0,0,1,0,1,FALSE,FALSE
-Argentina,https://flagcdn.com/w640/ar.png,FALSE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,0,3,0,0,0,0,0,0,0,TRUE,FALSE
+Antigua Barbuda,flag-photos/countries/AntiguaBarbuda.png,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,0,1,0,0,0,0,1,0,1,FALSE,FALSE
+Argentina,https://flagcdn.com/w640/ar.png,FALSE,FALSE,TRUE,TRUE,FALSE,TRUE,FALSE,0,3,0,0,0,0,0,0,0,TRUE,FALSE
 Australia,https://flagcdn.com/w640/au.png,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE,0,0,0,1,1,1,6,0,0,FALSE,FALSE
 Austria,https://flagcdn.com/w640/at.png,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,0,3,0,0,0,0,0,0,0,FALSE,FALSE
 Bahamas,https://flagcdn.com/w640/bs.png,FALSE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,0,3,0,0,0,0,0,0,1,FALSE,FALSE
@@ -20,7 +20,7 @@ Benin,https://flagcdn.com/w640/bj.png,TRUE,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,0,0
 Bermuda,https://flagcdn.com/w640/bm.png,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE,FALSE,0,0,1,1,1,1,0,0,0,TRUE,FALSE
 Bhutan,https://flagcdn.com/w640/bt.png,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,0,0,4,0,0,0,0,0,0,FALSE,FALSE
 Bolivia,https://flagcdn.com/w640/bo.png,TRUE,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,0,3,0,0,0,0,0,0,0,FALSE,FALSE
-Botswana,https://flagcdn.com/w640/bw.png,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,0,5,0,0,0,0,0,0,0,FALSE,FALSE
+Botswana,https://flagcdn.com/w640/bw.png,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,0,5,0,0,0,0,0,0,0,FALSE,FALSE
 Brazil,https://flagcdn.com/w640/br.png,FALSE,TRUE,TRUE,TRUE,FALSE,TRUE,FALSE,0,0,1,0,0,0,22,0,0,FALSE,TRUE
 British Virgin Isles,flag-photos/countries/BritishVirginIslands.png,TRUE,TRUE,TRUE,TRUE,FALSE,TRUE,FALSE,0,0,0,1,1,1,0,0,0,TRUE,TRUE
 Brunei,https://flagcdn.com/w640/bn.png,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,0,0,0,0,0,0,0,0,1,TRUE,TRUE
@@ -31,51 +31,51 @@ Burundi,https://flagcdn.com/w640/bi.png,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,0
 Cameroon,https://flagcdn.com/w640/cm.png,TRUE,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,3,0,0,0,0,0,1,0,0,FALSE,FALSE
 Canada,https://flagcdn.com/w640/ca.png,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,2,0,0,0,0,0,0,0,0,FALSE,FALSE
 Cape Verde,flag-photos/countries/CapeVerde.png,TRUE,FALSE,TRUE,TRUE,FALSE,TRUE,FALSE,0,5,0,0,0,0,10,0,0,FALSE,FALSE
-Cayman Islands,https://flagcdn.com/w640/ky.png,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE,FALSE,0,0,1,1,1,1,4,0,0,TRUE,TRUE
+Cayman Islands,https://flagcdn.com/w640/ky.png,TRUE,TRUE,TRUE,TRUE,FALSE,TRUE,FALSE,0,0,1,1,1,1,4,0,0,TRUE,TRUE
 Central African Republic,https://flagcdn.com/w640/cf.png,TRUE,TRUE,TRUE,TRUE,FALSE,TRUE,FALSE,1,0,0,0,0,0,1,0,0,FALSE,FALSE
 Chad,https://flagcdn.com/w640/td.png,TRUE,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,3,0,0,0,0,0,0,0,0,FALSE,FALSE
 Chile,https://flagcdn.com/w640/cl.png,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE,0,2,0,0,0,1,1,0,0,FALSE,FALSE
 China,https://flagcdn.com/w640/cn.png,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,0,0,0,0,0,0,5,0,0,FALSE,FALSE
 Colombia,https://flagcdn.com/w640/co.png,TRUE,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,0,3,0,0,0,0,0,0,0,FALSE,FALSE
-The Comoros,flag-photos/countries/TheComoros.png,TRUE,TRUE,FALSE,TRUE,FALSE,TRUE,FALSE,0,4,0,0,0,0,4,1,1,FALSE,FALSE
+The Comoros,flag-photos/countries/TheComoros.png,TRUE,TRUE,TRUE,TRUE,FALSE,TRUE,FALSE,0,4,0,0,0,0,4,1,1,FALSE,FALSE
 Congo,flag-photos/countries/RepublicoftheCongo.png,TRUE,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,0,0,0,0,0,0,0,0,0,FALSE,FALSE
 Cook Islands,https://flagcdn.com/w640/ck.png,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE,0,0,1,1,1,1,15,0,0,FALSE,FALSE
-Costa Rica,https://flagcdn.com/w640/cr.png,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE,FALSE,0,5,0,0,0,0,0,0,0,FALSE,FALSE
+Costa Rica,https://flagcdn.com/w640/cr.png,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE,0,5,0,0,0,0,0,0,0,FALSE,FALSE
 Cuba,https://flagcdn.com/w640/cu.png,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE,0,5,0,0,0,0,1,0,1,FALSE,FALSE
-Cyprus,https://flagcdn.com/w640/cy.png,FALSE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,0,0,0,0,0,0,0,0,0,TRUE,FALSE
+Cyprus,https://flagcdn.com/w640/cy.png,FALSE,TRUE,FALSE,TRUE,FALSE,TRUE,FALSE,0,0,0,0,0,0,0,0,0,TRUE,FALSE
 Czech Republic,https://flagcdn.com/w640/cz.png,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,0,2,0,0,0,0,0,0,1,FALSE,FALSE
 Denmark,https://flagcdn.com/w640/dk.png,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,0,0,0,1,0,0,0,0,0,FALSE,FALSE
-Djibouti,https://flagcdn.com/w640/dj.png,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,0,0,0,0,0,0,1,0,1,FALSE,FALSE
+Djibouti,https://flagcdn.com/w640/dj.png,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE,FALSE,0,0,0,0,0,0,1,0,1,FALSE,FALSE
 Dominica,https://flagcdn.com/w640/dm.png,TRUE,TRUE,FALSE,TRUE,TRUE,TRUE,FALSE,0,0,1,0,0,0,10,0,0,FALSE,FALSE
 Dominican Republic,https://flagcdn.com/w640/do.png,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE,0,0,0,1,0,0,0,0,0,FALSE,FALSE
 Ecuador,https://flagcdn.com/w640/ec.png,TRUE,TRUE,FALSE,TRUE,FALSE,TRUE,FALSE,0,3,0,0,0,0,0,0,0,FALSE,FALSE
 Egypt,https://flagcdn.com/w640/eg.png,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,0,3,0,0,0,0,0,0,0,FALSE,TRUE
 El Salvador,https://flagcdn.com/w640/sv.png,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,0,3,0,0,0,0,0,0,0,FALSE,FALSE
-Equatorial Guinea,https://flagcdn.com/w640/gq.png,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,0,3,0,0,0,0,0,0,1,FALSE,FALSE
-Ethiopia,https://flagcdn.com/w640/et.png,TRUE,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,0,3,0,0,0,0,0,0,0,FALSE,FALSE
-Faeroe Islands,flag-photos/countries/FaroeIslands.png,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,0,0,0,1,0,0,0,0,0,FALSE,FALSE
-Falklands Islands,flag-photos/countries/FalklandIslands.png,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE,0,0,0,1,1,1,0,0,0,TRUE,TRUE
+Equatorial Guinea,https://flagcdn.com/w640/gq.png,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE,FALSE,0,3,0,0,0,0,0,0,1,FALSE,FALSE
+Ethiopia,https://flagcdn.com/w640/et.png,TRUE,TRUE,TRUE,FALSE,FALSE,TRUE,FALSE,0,3,0,0,0,0,0,0,0,FALSE,FALSE
+Faeroe Islands,flag-photos/countries/FaroeIslands.png,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE,0,0,0,1,0,0,0,0,0,FALSE,FALSE
+Falklands Islands,flag-photos/countries/FalklandIslands.png,TRUE,TRUE,TRUE,TRUE,FALSE,TRUE,FALSE,0,0,0,1,1,1,0,0,0,TRUE,TRUE
 Fiji,https://flagcdn.com/w640/fj.png,TRUE,FALSE,TRUE,TRUE,FALSE,TRUE,FALSE,0,0,0,2,1,1,0,0,0,TRUE,FALSE
-Finland,https://flagcdn.com/w640/fi.png,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,FALSE,0,0,0,1,0,0,0,0,0,FALSE,FALSE
+Finland,https://flagcdn.com/w640/fi.png,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE,0,0,0,1,0,0,0,0,0,FALSE,FALSE
 France,https://flagcdn.com/w640/fr.png,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE,3,0,0,0,0,0,0,0,0,FALSE,FALSE
 French Guiana,https://flagcdn.com/w640/gf.png,TRUE,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,0,0,0,0,0,0,1,0,0,FALSE,FALSE
 French Polynesia,https://flagcdn.com/w640/pf.png,TRUE,FALSE,TRUE,TRUE,FALSE,TRUE,FALSE,0,3,1,0,0,0,1,0,0,TRUE,FALSE
-Gabon,https://flagcdn.com/w640/ga.png,FALSE,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,0,3,0,0,0,0,0,0,0,FALSE,FALSE
+Gabon,https://flagcdn.com/w640/ga.png,FALSE,TRUE,TRUE,FALSE,FALSE,TRUE,FALSE,0,3,0,0,0,0,0,0,0,FALSE,FALSE
 Gambia,https://flagcdn.com/w640/gm.png,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE,FALSE,0,5,0,0,0,0,0,0,0,FALSE,FALSE
-East Germany,flag-photos/countries/EastGermany.png,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,0,3,0,0,0,0,0,0,0,TRUE,FALSE
+East Germany,flag-photos/countries/EastGermany.png,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,0,3,0,0,0,0,0,0,0,TRUE,FALSE
 Germany,https://flagcdn.com/w640/de.png,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,0,3,0,0,0,0,0,0,0,FALSE,FALSE
 Ghana,https://flagcdn.com/w640/gh.png,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,0,3,0,0,0,0,1,0,0,FALSE,FALSE
 Gibraltar,https://flagcdn.com/w640/gi.png,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,0,1,0,0,0,0,0,0,0,TRUE,FALSE
-Greece,https://flagcdn.com/w640/gr.png,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,0,9,0,1,0,1,0,0,0,FALSE,FALSE
+Greece,https://flagcdn.com/w640/gr.png,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE,0,9,0,1,0,1,0,0,0,FALSE,FALSE
 Greenland,https://flagcdn.com/w640/gl.png,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,0,0,1,0,0,0,0,0,0,FALSE,FALSE
 Grenada,https://flagcdn.com/w640/gd.png,TRUE,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,0,0,1,0,0,0,7,0,1,FALSE,FALSE
-Guam,https://flagcdn.com/w640/gu.png,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE,TRUE,0,0,0,0,0,0,0,0,0,TRUE,TRUE
-Guatemala,https://flagcdn.com/w640/gt.png,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,3,0,0,0,0,0,0,0,0,FALSE,FALSE
+Guam,https://flagcdn.com/w640/gu.png,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE,0,0,0,0,0,0,0,0,0,TRUE,TRUE
+Guatemala,https://flagcdn.com/w640/gt.png,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE,3,0,0,0,0,0,0,0,0,FALSE,FALSE
 Guinea,https://flagcdn.com/w640/gn.png,TRUE,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,3,0,0,0,0,0,0,0,0,FALSE,FALSE
 Guinea Bissau,https://flagcdn.com/w640/gw.png,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,1,2,0,0,0,0,1,0,0,FALSE,FALSE
 Guyana,https://flagcdn.com/w640/gy.png,TRUE,TRUE,FALSE,TRUE,TRUE,TRUE,FALSE,0,0,0,0,0,0,0,0,1,FALSE,FALSE
 Haiti,https://flagcdn.com/w640/ht.png,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE,FALSE,2,0,0,0,0,0,0,0,0,FALSE,FALSE
-Honduras,https://flagcdn.com/w640/hn.png,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,0,3,0,0,0,0,5,0,0,FALSE,FALSE
+Honduras,https://flagcdn.com/w640/hn.png,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE,0,3,0,0,0,0,5,0,0,FALSE,FALSE
 Hong Kong,https://flagcdn.com/w640/hk.png,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,0,0,0,0,0,0,0,0,0,TRUE,FALSE
 Hungary,https://flagcdn.com/w640/hu.png,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,0,3,0,0,0,0,0,0,0,FALSE,FALSE
 Iceland,https://flagcdn.com/w640/is.png,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,0,0,0,1,0,0,0,0,0,FALSE,FALSE
@@ -92,10 +92,10 @@ Japan,https://flagcdn.com/w640/jp.png,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,0,
 Jordan,https://flagcdn.com/w640/jo.png,TRUE,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,0,3,0,0,0,0,1,0,1,FALSE,FALSE
 Cambodia,flag-photos/countries/Cambodia.png,TRUE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,0,3,0,0,0,0,0,0,0,TRUE,FALSE
 Kenya,https://flagcdn.com/w640/ke.png,TRUE,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,0,5,1,0,0,0,0,0,0,TRUE,FALSE
-Kiribati,https://flagcdn.com/w640/ki.png,TRUE,FALSE,TRUE,TRUE,FALSE,TRUE,FALSE,0,0,0,0,0,0,1,0,0,TRUE,FALSE
+Kiribati,https://flagcdn.com/w640/ki.png,TRUE,TRUE,TRUE,TRUE,FALSE,TRUE,FALSE,0,0,0,0,0,0,1,0,0,TRUE,FALSE
 Kuwait,https://flagcdn.com/w640/kw.png,TRUE,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,0,3,0,0,0,0,0,0,0,FALSE,FALSE
 Laos,https://flagcdn.com/w640/la.png,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE,0,3,1,0,0,0,0,0,0,FALSE,FALSE
-Lebanon,https://flagcdn.com/w640/lb.png,TRUE,TRUE,FALSE,TRUE,FALSE,TRUE,FALSE,0,2,0,0,0,0,0,0,0,FALSE,FALSE
+Lebanon,https://flagcdn.com/w640/lb.png,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,0,2,0,0,0,0,0,0,0,FALSE,FALSE
 Lesotho,https://flagcdn.com/w640/ls.png,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE,2,0,0,0,0,0,0,0,0,TRUE,FALSE
 Liberia,https://flagcdn.com/w640/lr.png,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE,0,11,0,0,0,1,1,0,0,FALSE,FALSE
 Libya,https://flagcdn.com/w640/ly.png,TRUE,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,0,0,0,0,0,0,0,0,0,FALSE,FALSE
@@ -109,8 +109,8 @@ Mali,https://flagcdn.com/w640/ml.png,TRUE,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,3,0,
 Malta,https://flagcdn.com/w640/mt.png,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,2,0,0,1,0,0,0,0,0,TRUE,FALSE
 Northern Mariana Islands,flag-photos/countries/NorthernMarianaIslands.png,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE,0,0,0,0,0,0,1,0,0,TRUE,FALSE
 Mauritania,https://flagcdn.com/w640/mr.png,TRUE,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,0,0,0,0,0,0,1,1,0,FALSE,FALSE
-Mauritius,https://flagcdn.com/w640/mu.png,TRUE,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,0,4,0,0,0,0,0,0,0,FALSE,FALSE
-Mexico,https://flagcdn.com/w640/mx.png,TRUE,TRUE,FALSE,TRUE,FALSE,TRUE,FALSE,3,0,0,0,0,0,0,0,0,TRUE,FALSE
+Mauritius,https://flagcdn.com/w640/mu.png,TRUE,TRUE,TRUE,FALSE,FALSE,TRUE,FALSE,0,4,0,0,0,0,0,0,0,FALSE,FALSE
+Mexico,https://flagcdn.com/w640/mx.png,TRUE,TRUE,FALSE,TRUE,TRUE,TRUE,FALSE,3,0,0,0,0,0,0,0,0,TRUE,FALSE
 Micronesia,https://flagcdn.com/w640/fm.png,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,0,0,0,0,0,0,4,0,0,FALSE,FALSE
 Monaco,https://flagcdn.com/w640/mc.png,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,0,2,0,0,0,0,0,0,0,FALSE,FALSE
 Mongolia,https://flagcdn.com/w640/mn.png,TRUE,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,3,0,2,0,0,0,1,1,1,TRUE,FALSE
@@ -122,7 +122,7 @@ Nepal,https://flagcdn.com/w640/np.png,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE,0,0
 Netherlands,https://flagcdn.com/w640/nl.png,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,0,3,0,0,0,0,0,0,0,FALSE,FALSE
 Netherlands Antilles,flag-photos/countries/NetherlandsAntilles.png,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE,1,1,0,0,0,0,6,0,0,FALSE,FALSE
 New Zealand,https://flagcdn.com/w640/nz.png,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE,0,0,0,1,1,1,4,0,0,FALSE,FALSE
-Nicaragua,https://flagcdn.com/w640/ni.png,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,0,3,0,0,0,0,0,0,0,FALSE,FALSE
+Nicaragua,https://flagcdn.com/w640/ni.png,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE,0,3,0,0,0,0,0,0,0,FALSE,FALSE
 Niger,https://flagcdn.com/w640/ne.png,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,0,3,1,0,0,0,0,0,0,FALSE,FALSE
 Nigeria,https://flagcdn.com/w640/ng.png,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,3,0,0,0,0,0,0,0,0,FALSE,FALSE
 Niue,https://flagcdn.com/w640/nu.png,TRUE,FALSE,TRUE,TRUE,FALSE,TRUE,FALSE,0,0,1,1,1,1,5,0,0,FALSE,FALSE
@@ -140,28 +140,28 @@ Portugal,https://flagcdn.com/w640/pt.png,TRUE,TRUE,FALSE,TRUE,FALSE,TRUE,FALSE,0
 Puerto Rico,https://flagcdn.com/w640/pr.png,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE,0,5,0,0,0,0,1,0,1,FALSE,FALSE
 Qatar,https://flagcdn.com/w640/qa.png,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,0,0,0,0,0,0,0,0,0,FALSE,FALSE
 Romania,https://flagcdn.com/w640/ro.png,TRUE,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,3,0,0,0,0,0,2,0,0,TRUE,TRUE
-Rwanda,https://flagcdn.com/w640/rw.png,FALSE,TRUE,TRUE,TRUE,FALSE,TRUE,FALSE,3,0,0,0,0,0,0,0,0,FALSE,TRUE
-San Marino,https://flagcdn.com/w640/sm.png,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,0,2,0,0,0,0,0,0,0,FALSE,FALSE
-Sao Tome,flag-photos/countries/Bandeira_Sao_Tome.png,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,0,3,0,0,0,0,2,0,1,FALSE,FALSE
+Rwanda,https://flagcdn.com/w640/rw.png,FALSE,TRUE,TRUE,FALSE,FALSE,TRUE,FALSE,3,0,0,0,0,0,0,0,0,FALSE,TRUE
+San Marino,https://flagcdn.com/w640/sm.png,FALSE,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,0,2,0,0,0,0,0,0,0,FALSE,FALSE
+Sao Tome,flag-photos/countries/Bandeira_Sao_Tome.png,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE,0,3,0,0,0,0,2,0,1,FALSE,FALSE
 Saudi Arabia,https://flagcdn.com/w640/sa.png,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,0,0,0,0,0,0,0,0,0,TRUE,TRUE
-Senegal,https://flagcdn.com/w640/sn.png,TRUE,TRUE,FALSE,TRUE,FALSE,TRUE,FALSE,3,0,0,0,0,0,1,0,0,FALSE,FALSE
+Senegal,https://flagcdn.com/w640/sn.png,TRUE,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,3,0,0,0,0,0,1,0,0,FALSE,FALSE
 Seychelles,https://flagcdn.com/w640/sc.png,TRUE,TRUE,TRUE,TRUE,FALSE,TRUE,FALSE,0,0,0,0,0,0,0,0,0,FALSE,FALSE
-Sierra Leone,https://flagcdn.com/w640/sl.png,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,0,3,0,0,0,0,0,0,0,FALSE,FALSE
+Sierra Leone,https://flagcdn.com/w640/sl.png,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,FALSE,0,3,0,0,0,0,0,0,0,FALSE,FALSE
 Singapore,https://flagcdn.com/w640/sg.png,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,0,2,0,0,0,0,5,1,0,FALSE,FALSE
-Soloman Islands,https://upload.wikimedia.org/wikipedia/commons/7/74/Flag_of_the_Solomon_Islands.svg,FALSE,TRUE,FALSE,TRUE,FALSE,TRUE,FALSE,0,0,0,0,0,0,5,0,1,FALSE,FALSE
-Somalia,https://flagcdn.com/w640/so.png,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,0,0,0,0,0,0,1,0,0,FALSE,FALSE
-South Africa,https://flagcdn.com/w640/za.png,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE,0,3,0,1,1,0,0,0,0,FALSE,FALSE
+Soloman Islands,https://upload.wikimedia.org/wikipedia/commons/7/74/Flag_of_the_Solomon_Islands.svg,FALSE,TRUE,TRUE,TRUE,FALSE,TRUE,FALSE,0,0,0,0,0,0,5,0,1,FALSE,FALSE
+Somalia,https://flagcdn.com/w640/so.png,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE,0,0,0,0,0,0,1,0,0,FALSE,FALSE
+South Africa,https://flagcdn.com/w640/za.png,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,0,3,0,1,1,0,0,0,0,FALSE,FALSE
 South Korea,https://flagcdn.com/w640/kr.png,TRUE,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,0,0,1,0,0,0,0,0,0,TRUE,FALSE
 Yemen,flag-photos/countries/Yemen.png,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,0,3,0,0,0,0,0,0,0,FALSE,FALSE
-Spain,https://flagcdn.com/w640/es.png,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,0,3,0,0,0,0,0,0,0,FALSE,FALSE
+Spain,https://flagcdn.com/w640/es.png,TRUE,TRUE,FALSE,TRUE,FALSE,TRUE,FALSE,0,3,0,0,0,0,0,0,0,FALSE,FALSE
 Sri Lanka,https://flagcdn.com/w640/lk.png,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,2,0,0,0,0,0,0,0,0,TRUE,FALSE
-Saint Helena,https://flagcdn.com/w640/sh.png,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE,FALSE,0,0,0,1,1,1,0,0,0,TRUE,FALSE
+Saint Helena,https://flagcdn.com/w640/sh.png,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE,0,0,0,1,1,1,0,0,0,TRUE,FALSE
 Saint Kitts Nevis,https://upload.wikimedia.org/wikipedia/commons/f/fe/Flag_of_Saint_Kitts_and_Nevis.svg,TRUE,TRUE,FALSE,TRUE,TRUE,TRUE,FALSE,0,0,0,0,0,0,2,0,1,FALSE,FALSE
 Saint Lucia,https://upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_Saint_Lucia.svg,FALSE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,0,0,0,0,0,0,0,0,1,FALSE,FALSE
 Saint Vincent and the Grenadines,https://upload.wikimedia.org/wikipedia/commons/6/6d/Flag_of_Saint_Vincent_and_the_Grenadines.svg,FALSE,TRUE,TRUE,FALSE,FALSE,TRUE,FALSE,5,0,0,0,0,0,0,0,0,TRUE,TRUE
 Sudan,https://flagcdn.com/w640/sd.png,TRUE,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,0,3,0,0,0,0,0,0,1,FALSE,FALSE
 Surinam,https://upload.wikimedia.org/wikipedia/commons/6/60/Flag_of_Suriname.svg,TRUE,TRUE,FALSE,TRUE,FALSE,TRUE,FALSE,0,5,0,0,0,0,1,0,0,FALSE,FALSE
-Eswatini,https://upload.wikimedia.org/wikipedia/commons/f/fb/Flag_of_Eswatini.svg,TRUE,TRUE,FALSE,TRUE,TRUE,TRUE,FALSE,0,5,0,0,0,0,0,0,0,TRUE,FALSE
+Eswatini,https://upload.wikimedia.org/wikipedia/commons/f/fb/Flag_of_Eswatini.svg,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,0,5,0,0,0,0,0,0,0,TRUE,FALSE
 Sweden,https://flagcdn.com/w640/se.png,FALSE,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,0,0,0,1,0,0,0,0,0,FALSE,FALSE
 Switzerland,https://flagcdn.com/w640/ch.png,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,0,0,0,1,0,0,0,0,0,FALSE,FALSE
 Syria,https://flagcdn.com/w640/sy.png,TRUE,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,0,3,0,0,0,0,2,0,0,FALSE,FALSE
@@ -174,16 +174,16 @@ Trinidad Tobago,https://upload.wikimedia.org/wikipedia/commons/6/64/Flag_of_Trin
 Tunisia,https://flagcdn.com/w640/tn.png,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,0,0,1,0,0,0,1,1,0,FALSE,FALSE
 Turkey,https://flagcdn.com/w640/tr.png,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,0,0,0,0,0,0,1,1,0,FALSE,FALSE
 Turks Cocos Islands,https://upload.wikimedia.org/wikipedia/commons/a/a0/Flag_of_the_Turks_and_Caicos_Islands.svg,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,0,0,0,1,1,1,0,0,0,TRUE,FALSE
-Tuvalu,https://flagcdn.com/w640/tv.png,TRUE,TRUE,TRUE,TRUE,FALSE,TRUE,FALSE,0,0,0,1,1,1,9,0,0,FALSE,FALSE
+Tuvalu,https://flagcdn.com/w640/tv.png,TRUE,FALSE,TRUE,TRUE,FALSE,TRUE,FALSE,0,0,0,1,1,1,9,0,0,FALSE,FALSE
 UAE,https://flagcdn.com/w640/ae.png,TRUE,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,1,3,0,0,0,0,0,0,0,FALSE,FALSE
 Uganda,https://flagcdn.com/w640/ug.png,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,0,6,1,0,0,0,0,0,0,FALSE,FALSE
 UK,https://flagcdn.com/w640/gb.png,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE,0,0,0,1,1,0,0,0,0,FALSE,FALSE
-Uruguay,https://flagcdn.com/w640/uy.png,TRUE,TRUE,TRUE,TRUE,FALSE,TRUE,FALSE,0,9,0,0,0,1,1,0,0,FALSE,FALSE
+Uruguay,https://flagcdn.com/w640/uy.png,TRUE,FALSE,TRUE,TRUE,FALSE,TRUE,FALSE,0,9,0,0,0,1,1,0,0,FALSE,FALSE
 Virgin Islands of the United States,https://upload.wikimedia.org/wikipedia/commons/f/f8/Flag_of_the_United_States_Virgin_Islands.svg,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,0,0,0,0,0,0,0,0,0,TRUE,TRUE
 USA,https://flagcdn.com/w640/us.png,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE,0,13,0,0,0,1,50,0,0,FALSE,FALSE
 USSR,flag-photos/countries/USSR.png,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,0,0,0,0,0,0,1,0,0,TRUE,FALSE
 Vanuatu,https://flagcdn.com/w640/vu.png,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,0,0,0,0,0,0,0,0,1,FALSE,FALSE
-Vatican City,https://flagcdn.com/w640/va.png,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,2,0,0,0,0,0,0,0,0,TRUE,FALSE
+Vatican City,https://flagcdn.com/w640/va.png,FALSE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,2,0,0,0,0,0,0,0,0,TRUE,FALSE
 Venezuela,https://flagcdn.com/w640/ve.png,TRUE,FALSE,TRUE,TRUE,FALSE,TRUE,FALSE,0,3,0,0,0,0,7,0,0,TRUE,FALSE
 Vietnam,https://flagcdn.com/w640/vn.png,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,0,0,0,0,0,0,1,0,0,FALSE,FALSE
 Samoa,flag-photos/countries/Samoa.png,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE,0,0,0,0,0,1,5,0,0,FALSE,FALSE

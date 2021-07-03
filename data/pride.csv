@@ -4,7 +4,7 @@ Aromantic,flag-photos/pride/aromantic_2014.svg,FALSE,TRUE,FALSE,TRUE,TRUE,FALSE,
 Asexual,flag-photos/pride/asexual_2010.svg,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,TRUE,0,4,0,0,0,0,0,0,0,FALSE,FALSE
 Bisexual,flag-photos/pride/bisexual_1998.svg,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,TRUE,0,3,0,0,0,0,0,0,0,FALSE,FALSE
 Genderfluid,flag-photos/pride/genderfluid_2012.svg,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,TRUE,0,5,0,0,0,0,0,0,0,FALSE,FALSE
-Genderqueer,flag-photos/pride/genderqueer_2011.svg,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,0,3,0,0,0,0,0,0,0,FALSE,FALSE
+Genderqueer,flag-photos/pride/genderqueer_2011.svg,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,0,3,0,0,0,0,0,0,0,FALSE,FALSE
 Intersex,flag-photos/pride/intersex_2013.svg,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,0,0,1,0,0,0,0,0,0,FALSE,FALSE
 Labrys Lesbian,flag-photos/pride/labrysLesbian_1999.svg,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,TRUE,0,0,0,0,0,0,0,0,1,TRUE,FALSE
 Lesbian (2010),flag-photos/pride/lesbian_2010.svg,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE,0,7,0,0,0,0,0,0,0,FALSE,FALSE
@@ -23,5 +23,5 @@ South African Pride,flag-photos/pride/southAfricaPride_2010.svg,TRUE,TRUE,TRUE,T
 Transgender,flag-photos/pride/transgender_1999.svg,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE,0,5,0,0,0,0,0,0,0,FALSE,FALSE
 Polyamorous (1995),flag-photos/pride/Polyflag.webp,TRUE,FALSE,TRUE,FALSE,TRUE,TRUE,FALSE,0,3,0,0,0,0,0,0,0,TRUE,FALSE
 Polyamorous (2020),flag-photos/pride/Polyamorous_Flag_2020.svg,TRUE,FALSE,TRUE,FALSE,TRUE,TRUE,FALSE,0,3,0,0,0,0,0,0,0,TRUE,FALSE
-Men-Loving Man,flag-photos/pride/MLM_flag.png,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,FALSE,0,7,0,0,0,0,0,0,0,FALSE,FALSE
+Men-Loving Man,flag-photos/pride/MLM_flag.png,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,TRUE,0,7,0,0,0,0,0,0,0,FALSE,FALSE
 Demisexual,flag-photos/pride/Demiflag.webp,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,TRUE,0,3,0,0,0,0,0,0,1,FALSE,FALSE
