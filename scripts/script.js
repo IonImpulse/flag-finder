@@ -21,7 +21,8 @@ async function start() {
         "pride.csv",
         "organizations.csv",
         "us_state_territory_flags.csv",
-        "corporations.csv"
+        "corporations.csv",
+        "ideologies.csv",
     ];
 
     console.log("Loading data...");
