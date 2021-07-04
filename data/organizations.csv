@@ -1,2 +1,24 @@
 Name,URL,red,greenteal,blue,white,black,orangeyellow,purple,bars,stripes,circles,crosses,saltires,quarters,stars,crescents,triangles,contains_image,contains_text
-North Atlantic Treaty Organization,https://upload.wikimedia.org/wikipedia/commons/3/37/Flag_of_NATO.svg,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE,0,0,1,0,0,0,0,0,0,TRUE,FLASE
+North Atlantic Treaty Organization,https://upload.wikimedia.org/wikipedia/commons/3/37/Flag_of_NATO.svg,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE,0,0,1,0,0,0,0,0,0,TRUE,FALSE
+United Nations,https://upload.wikimedia.org/wikipedia/commons/2/2f/Flag_of_the_United_Nations.svg,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE,0,0,0,0,0,0,0,0,0,TRUE,FALSE
+Commonwealth of Nations,https://upload.wikimedia.org/wikipedia/en/c/c9/Commonwealth_Flag_2013.svg,FALSE,TRUE,FALSE,TRUE,FALSE,TRUE,FALSE,0,0,0,0,0,0,0,0,0,TRUE,FALSE
+Organization of American States,https://upload.wikimedia.org/wikipedia/commons/1/1e/Flag_of_the_Organization_of_American_States.svg,FALSE,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,0,0,0,0,0,0,0,0,0,TRUE,FALSE
+Union of South American Nations,https://upload.wikimedia.org/wikipedia/commons/d/d9/Flag_of_UNASUR.svg,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE,0,0,0,0,0,0,0,0,0,TRUE,FALSE
+African Union,https://upload.wikimedia.org/wikipedia/commons/5/51/Flag_of_the_African_Union.svg,FALSE,TRUE,FALSE,TRUE,FALSE,TRUE,FALSE,0,0,0,0,0,0,55,0,0,TRUE,FALSE
+Southern African Development Community,https://upload.wikimedia.org/wikipedia/commons/5/53/Flag_of_SADC.svg,FALSE,TRUE,TRUE,TRUE,FALSE,TRUE,FALSE,0,0,1,0,0,0,0,0,0,TRUE,TRUE
+East African Community,https://upload.wikimedia.org/wikipedia/commons/1/12/Flag_of_the_East_African_Community.svg,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,0,9,0,0,0,0,0,0,0,TRUE,TRUE
+Gulf Cooperation Council,https://upload.wikimedia.org/wikipedia/commons/6/60/GCC_Flag.svg,TRUE,TRUE,FALSE,TRUE,TRUE,TRUE,FALSE,0,0,1,0,0,0,0,0,0,TRUE,TRUE
+Nordic Council,https://upload.wikimedia.org/wikipedia/commons/e/eb/Flag_of_the_Nordic_Council_2016.svg,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,0,0,0,0,0,0,0,0,0,TRUE,FALSE
+Association of Southeast Asian Nations,https://upload.wikimedia.org/wikipedia/en/8/87/Flag_of_ASEAN.svg,TRUE,FALSE,TRUE,TRUE,FALSE,TRUE,FALSE,0,0,1,0,0,0,0,0,0,TRUE,FALSE
+Collective Security Treaty Organization,https://upload.wikimedia.org/wikipedia/commons/b/b8/Flag_of_the_Collective_Security_Treaty_Organization.svg,FALSE,FALSE,TRUE,TRUE,FALSE,TRUE,FALSE,0,0,0,0,0,0,0,0,0,TRUE,FALSE
+Commonwealth of Independent States,https://upload.wikimedia.org/wikipedia/commons/1/11/Flag_of_the_CIS.svg,FALSE,FALSE,TRUE,TRUE,FALSE,TRUE,FALSE,0,0,0,0,0,0,0,0,0,TRUE,FALSE
+Eurasian Economic Union,https://upload.wikimedia.org/wikipedia/commons/3/37/Flag_of_the_Eurasian_Economic_Union.svg,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,0,0,0,0,0,0,0,0,0,TRUE,FALSE
+Turkic Council,https://upload.wikimedia.org/wikipedia/commons/8/89/Flag_of_the_Turkic_Council.svg,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,0,0,0,0,0,0,1,1,0,TRUE,FALSE
+Pacific Community,https://upload.wikimedia.org/wikipedia/commons/5/50/Flag_of_the_Pacific_Community.svg,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE,0,0,0,0,0,0,26,0,0,TRUE,FALSE
+Caribbean Community,https://upload.wikimedia.org/wikipedia/commons/1/18/Flag_of_CARICOM.svg,FALSE,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,0,2,1,0,0,0,0,0,0,TRUE,FALSE
+Central American Integration System,https://upload.wikimedia.org/wikipedia/commons/4/40/Flag_of_the_Central_American_Integration_System.svg,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE,0,0,0,0,0,0,0,0,0,TRUE,TRUE
+Organisation internationale de la Francophonie,https://upload.wikimedia.org/wikipedia/commons/2/27/Flag_of_La_Francophonie.svg,TRUE,TRUE,TRUE,TRUE,FALSE,TRUE,TRUE,0,0,0,0,0,0,0,0,0,TRUE,FALSE
+League of Arab States,https://upload.wikimedia.org/wikipedia/commons/2/2b/Flag_of_the_Arab_League.svg,FALSE,TRUE,FALSE,TRUE,TRUE,TRUE,FALSE,0,0,0,0,0,0,0,1,0,TRUE,TRUE
+Organisation of Islamic Cooperation,https://upload.wikimedia.org/wikipedia/commons/2/21/OIC_Logo_since_2011.svg,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,0,0,0,0,0,0,0,1,0,TRUE,FALSE
+OPEC,https://upload.wikimedia.org/wikipedia/commons/d/d1/Flag_of_OPEC.svg,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE,0,0,0,0,0,0,0,0,0,TRUE,FALSE
+European Union,,FALSE,FALSE,TRUE,FALSE,TRUE,TRUE,TRUE,0,0,0,0,0,0,12,0,0,FALSE,FALSE

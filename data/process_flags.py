@@ -3,6 +3,7 @@ from scipy.spatial import KDTree
 from webcolors import (
     CSS21_NAMES_TO_HEX,
     hex_to_rgb,
+    normalize_hex,
 )
 import requests
 from PIL import Image, ImageDraw, UnidentifiedImageError
@@ -36,27 +37,16 @@ def get_colors(img) :
 
 def process_svg(svg_text) :
     colors = []
-    # find all fill statements in the svg
-    fill_pattern = re.compile(r'fill="(.*?)"')
-    stroke_pattern = re.compile(r'stroke="(.*?)"')
-    for match in fill_pattern.finditer(svg_text) :
-        color = match.group(1)
+    # find all fill statements in the svg   
 
+    pattern = re.compile(r'#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})')
+    for match in pattern.finditer(svg_text) :
+        color = match.group(1)
         if color != "none" :
             if color in CSS21_NAMES_TO_HEX.keys() :
                 color = CSS21_NAMES_TO_HEX[color]
             # convert hex to rgb tuple
-            rgb_tuple = hex_to_rgb(color)
-            colors.append(rgb_tuple)
-            
-    for match in stroke_pattern.finditer(svg_text) :
-        color = match.group(1)
-
-        if color != "none" :
-            if color in CSS21_NAMES_TO_HEX.keys() :
-                color = CSS21_NAMES_TO_HEX[color]
-            # convert hex to rgb tuple
-            rgb_tuple = hex_to_rgb(color)
+            rgb_tuple = hex_to_rgb(normalize_hex("#" + color))
             colors.append(rgb_tuple)
 
     if svg_text.count("<path") == len(colors) + 1 :
