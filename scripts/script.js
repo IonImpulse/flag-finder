@@ -21,6 +21,7 @@ async function start() {
         "pride.csv",
         "organizations.csv",
         "us_state_territory_flags.csv",
+        "corporations.csv"
     ];
 
     console.log("Loading data...");
@@ -443,7 +444,6 @@ async function main() {
 
     
 }
-
 
 async function onLoad() {
     sessionStorage.setItem("flag_data", JSON.stringify(await start()));
