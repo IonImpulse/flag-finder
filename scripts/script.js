@@ -45,8 +45,15 @@ async function start() {
 
     console.log("Loaded data!");
 
-    document.getElementById("subtext").innerHTML = `[ With a database of <number-flag>${flag_data.length}</number-flag> flags and counting ]`;
+    document.getElementById("subtext").innerHTML = `[ With a database of <number-flag>${insert_commas(flag_data.length)}</number-flag> flags and counting ]`;
     return flag_data;
+}
+
+// function to take a number and insert commas where needed
+function insert_commas(n) {
+    var a = n.toString().split(".");
+    a[0] = a[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    return a.join(".");
 }
 
 async function start_click() {
