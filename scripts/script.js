@@ -23,6 +23,7 @@ async function start() {
         "us_state_territory_flags.csv",
         "corporations.csv",
         "ideologies.csv",
+        "cities_of_the_world.csv"
     ];
 
     console.log("Loading data...");

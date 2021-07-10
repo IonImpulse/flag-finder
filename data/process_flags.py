@@ -5,6 +5,7 @@ from webcolors import (
     hex_to_rgb,
     normalize_hex,
 )
+import time
 import requests
 from PIL import Image, ImageDraw, UnidentifiedImageError
 import argparse
@@ -58,20 +59,41 @@ if __name__ == '__main__':
     input_file = sys.argv[1]
     # import csv file from command line argument
     rows = []
-    with open(input_file, 'r') as csv_file:
+    with open(input_file, 'r', encoding="utf8") as csv_file:
         reader = csv.reader(csv_file)
         for row in reader:
             rows.append(row)
     
     colors_list = []
 
-    for row in rows[1:] :
+    headers = {
+        'User-Agent': 'FlagIndexer/1.3 (FlagIndexer.com; info@flagindexer.com)'
+    }
+
+    corrected_rows = []
+    
+    for index, row in enumerate(rows[1:]) :
         print(row[0])
+        corrected_rows.append(row)
         # if the flag is not in the csv file, then we need to download it
         if row[1].startswith("http") :
-            r = requests.get(row[1])
+            r = requests.get(row[1], headers=headers)
             
-            if row[1].endswith("svg") :
+            if "/wiki/File:" in row[1] :
+                html = r.content.decode("utf-8").split("\n")
+                for line in html :
+                    if "https://upload.wikimedia.org/wikipedia/commons" in line and "Original file" in line :
+                        image_url = line.split("\"")[3]
+                        break
+                print("Corrected to:", image_url)
+                time.sleep(1) # wait for image to be available
+                r = requests.get(image_url, headers=headers)
+            else :
+                image_url = row[1]
+            
+            corrected_rows[index][1] = image_url
+
+            if image_url.endswith("svg") :
                 svg_text = r.content.decode("utf-8")
                 colors_list.append(process_svg(svg_text))
             else :
@@ -79,7 +101,8 @@ if __name__ == '__main__':
                     img = Image.open(BytesIO(r.content))
                     colors_list.append(get_colors(img))
                 except PIL.UnidentifiedImageError :
-                    print(row[1] + " is not an image.")
+                    print(r.content)
+                    print(image_url + " is not an image.")
                     colors_list.append([])
         else :
             if row[1].endswith("svg") :
@@ -126,11 +149,11 @@ if __name__ == '__main__':
     
     header = ["Name","URL","red","greenteal","blue","white","black","orangeyellow","purple","bars","stripes","circles","crosses","saltires","quarters","stars","crescents","triangles","contains_image","contains_text"]
     # write out a new file with the correct colors
-    with open(input_file + "_processed.csv", 'w', newline="") as csv_file:
+    with open(input_file + "_processed.csv", 'w', newline="", encoding="utf-8") as csv_file:
         writer = csv.writer(csv_file)
         writer.writerow(header)
         for i in range(len(rows) - 1) :
-            row_to_write = [rows[i + 1][0], rows[i + 1][1]]
+            row_to_write = [rows[i + 1][0], corrected_rows[i][1]]
 
             if len(name_list[i]) > 0 :
                 for j in ["red","green/teal","blue","white","black","orange/yellow","purple"] :
