@@ -80,11 +80,12 @@ if __name__ == '__main__':
             r = requests.get(row[1], headers=headers)
             
             if "/wiki/File:" in row[1] :
+                name_of_file = row[1].split("File:")[1]
                 html = r.content.decode("utf-8").split("\n")
                 for line in html :
-                    if "https://upload.wikimedia.org/wikipedia/commons" in line and "Original file" in line :
+                    if "<div class=\"fullMedia\"><p><a href=\"https://upload.wikimedia.org/wikipedia/commons/" in line and "class=\"internal\"" in line and ("Original file" in line or name_of_file in line) :
                         image_url = line.split("\"")[3]
-                        break
+
                 print("Corrected to:", image_url)
                 time.sleep(1) # wait for image to be available
                 r = requests.get(image_url, headers=headers)
@@ -152,8 +153,8 @@ if __name__ == '__main__':
     with open(input_file + "_processed.csv", 'w', newline="", encoding="utf-8") as csv_file:
         writer = csv.writer(csv_file)
         writer.writerow(header)
-        for i in range(len(rows) - 1) :
-            row_to_write = [rows[i + 1][0], corrected_rows[i][1]]
+        for i in range(len(corrected_rows)) :
+            row_to_write = [corrected_rows[i][0], corrected_rows[i][1]]
 
             if len(name_list[i]) > 0 :
                 for j in ["red","green/teal","blue","white","black","orange/yellow","purple"] :
@@ -162,6 +163,6 @@ if __name__ == '__main__':
                     else :
                         row_to_write.append("FALSE")
             else :
-                print(rows[i + 1][0] + " has no colors.")
+                print(corrected_rows[i][0] + " has no colors.")
             
             writer.writerow(row_to_write)
