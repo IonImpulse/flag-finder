@@ -358,7 +358,7 @@ function show_remaining_flags(flags_left, show_stats) {
                 flag_info += `<attribute-flag class="flag-orange">orange</attribute-flag>/<attribute-flag class="flag-yellow">yellow</attribute-flag>, `;
             }
             if (flag.purple == true) {
-                flag_info += `<attribute-flag class="flag-purple">purple</attribute-flag, `;
+                flag_info += `<attribute-flag class="flag-purple">purple</attribute-flag>, `;
             }
 
             // Remove trailing comma
@@ -370,7 +370,9 @@ function show_remaining_flags(flags_left, show_stats) {
                 if (["red", "greenteal", "blue", "white", "black", "orangeyellow", "purple", "URL", "Name"].includes(attribute) == false) {
 
                     if (typeof(flag[attribute]) == 'boolean') {
-                        flag_info += `${attribute}, `;
+                        if (flag[attribute] == true) {
+                            flag_info += `${attribute}, `;                        
+                        }
                     } else {
                         if (flag[attribute] > 0) {
                             flag_info += `${attribute}=${flag[attribute]}, `;
@@ -432,11 +434,11 @@ async function animate_stats(num_flags_left, num_previous_flags_left, round_num,
     console.log(`Counting down from ${num_previous_flags_left} to ${num_flags_left}`);
 
     for (let num = num_previous_flags_left; num >= num_flags_left; num--) {
-        let stats_to_set = `<div id="stats">Round: ${round_num}/${total_rounds} | Flags Remaining: ${insert_commas(num)}</div>`;
+        let info = `Round: ${round_num}/${total_rounds} | Flags Remaining: ${insert_commas(num)}`;
+        let stats_to_set = `<div id="stats">${info}</div>`;
         stats_element.innerHTML = stats_to_set;
         await sleep(individual_time_to_wait);
-        let iterations = JSON.parse(sessionStorage.getItem("iterations"));
-        if (iterations != round_num) {
+        if (document.getElementById("stats").innerHTML != info) {
             return
         }
     }
