@@ -314,3 +314,30 @@ a:link {
 a:visited {
     color: #83c3eb;
 }
+
+.flag-frame-inner {
+    position:relative;
+    transition: all ease-in-out .3s, transform ease-in-out .1s;
+}
+
+.flag-frame-inner .flag-info-text {
+    position: absolute;
+    top: 0;
+    padding: 1vmax;
+    transition: all ease-in-out .3s, transform ease-in-out .1s;
+    background-color: #0000006b;
+    border: 0px solid #000;
+    border-radius: 15px;
+    -moz-border-radius: 15px;
+    color:#ffffff;
+    font-family: JetBrains Mono, monospace;
+    width: 290px;
+    font-size: 15px;
+    pointer-events: none;
+    line-height: 30px;
+}
+
+.flag-frame-inner:hover {
+    transform: translate(.2vmax, .2vmax);
+    cursor: pointer;
+}
