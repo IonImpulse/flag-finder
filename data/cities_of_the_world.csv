@@ -1,4 +1,4 @@
-Name,URL,red,greenteal,blue,white,black,orangeyellow,purple,bars,stripes,circles,crosses,saltires,quarters,stars,crescents,triangles,contains_image,contains_text
+,Name,URL,red,greenteal,blue,white,black,orangeyellow,purple,bars,stripes,circles,crosses,saltires,quarters,stars,crescents,triangles,contains_image,contains_text
 Porto-Novo,https://upload.wikimedia.org/wikipedia/commons/4/4a/Flag_of_Porto-Novo.svg,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,0,0,0,0,0,0,0,0,0,TRUE,TRUE
 Kinshasa,https://upload.wikimedia.org/wikipedia/commons/a/ad/Kinshasa_Flag.svg,FALSE,FALSE,TRUE,TRUE,FALSE,TRUE,FALSE,0,0,0,0,0,0,2,0,,FALSE,TRUE
 Abidjan,https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_Abidjan.png,FALSE,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,0,0,0,0,0,0,0,0,0,TRUE,TRUE
@@ -421,7 +421,6 @@ Andorra la Vella,https://upload.wikimedia.org/wikipedia/commons/6/6a/Flag_of_And
 Vienna,https://upload.wikimedia.org/wikipedia/commons/b/bf/Flag_of_Salzburg%2C_Vienna%2C_Vorarlberg.svg,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,0,2,0,0,0,0,0,0,0,FALSE,FALSE
 State Vienna,https://upload.wikimedia.org/wikipedia/commons/4/48/Flag_of_Vienna_%28state%29.svg,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,0,2,0,0,1,0,0,0,0,TRUE,FALSE
 Antwerp,https://upload.wikimedia.org/wikipedia/commons/7/79/Flag_of_Antwerp_%28City%29.svg,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,3,0,0,0,0,0,0,0,FALSE,FALSE
-Brussels(Copyrighted),https://upload.wikimedia.org/wikipedia/commons/2/2a/Flag_of_None.svg,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,,,,,,,,,
 Bruges,https://upload.wikimedia.org/wikipedia/commons/c/cf/Flag_of_Bruges.svg,TRUE,FALSE,TRUE,TRUE,FALSE,TRUE,FALSE,0,8,0,0,1,0,0,0,0,TRUE,FALSE
 Charleroi,https://upload.wikimedia.org/wikipedia/commons/6/6c/Drapeau_ville_be_Charleroi.svg,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,0,0,0,0,0,0,12,0,0,TRUE,FALSE
 Ghent,https://upload.wikimedia.org/wikipedia/commons/d/dd/GentseVlag.svg,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,0,0,0,1,0,0,0,0,0,TRUE,FALSE
@@ -687,9 +686,7 @@ Zürich,https://upload.wikimedia.org/wikipedia/commons/9/9b/Flag_of_Canton_of_Z%
 Belize City,https://upload.wikimedia.org/wikipedia/commons/1/11/Flag_of_Belize_City.png,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,TRUE,0,3,0,0,0,0,18,0,0,TRUE,TRUE
 Belmopan,https://upload.wikimedia.org/wikipedia/commons/b/b8/Flag_of_Belmopan.png,FALSE,TRUE,FALSE,TRUE,FALSE,TRUE,FALSE,0,3,1,0,0,0,0,0,0,TRUE,TRUE
 "Calgary, Alberta",https://upload.wikimedia.org/wikipedia/commons/f/f1/Flag_of_Calgary%2C_Alberta.svg,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,0,0,0,0,0,0,0,0,0,TRUE,FALSE
-"Edmonton, Alberta(Copyrighted)",https://upload.wikimedia.org/wikipedia/commons/2/2a/Flag_of_None.svg,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,,,,,,,,,
 "Guelph, Ontario",https://upload.wikimedia.org/wikipedia/commons/3/39/Flag_of_Guelph.svg,TRUE,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,0,7,0,0,0,0,0,0,0,TRUE,TRUE
-"Halifax, Nova Scotia(Copyrighted)",https://upload.wikimedia.org/wikipedia/commons/2/2a/Flag_of_None.svg,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,,,,,,,,,
 "Hull, Quebec",https://upload.wikimedia.org/wikipedia/commons/2/2a/Flag_of_None.svg,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,,,,,,,,,
 "Hamilton, Ontario",https://upload.wikimedia.org/wikipedia/commons/f/f3/Flag_of_Hamilton.svg,FALSE,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,3,0,0,0,0,0,0,0,0,TRUE,FALSE
 "Laval, Quebec",https://upload.wikimedia.org/wikipedia/commons/e/e5/Flag_of_Laval%2C_Quebec.svg,FALSE,TRUE,FALSE,TRUE,TRUE,FALSE,TRUE,0,0,0,0,0,0,0,0,0,TRUE,TRUE
@@ -699,7 +696,6 @@ Belmopan,https://upload.wikimedia.org/wikipedia/commons/b/b8/Flag_of_Belmopan.pn
 "Ottawa, Ontario",https://upload.wikimedia.org/wikipedia/commons/5/5f/Flag_of_Ottawa%2C_Ontario.svg,FALSE,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,0,2,0,0,0,0,0,0,0,TRUE,FALSE
 "Prince George, British Columbia",https://upload.wikimedia.org/wikipedia/commons/5/5a/Flag_of_Prince_George%2C_British_Columbia.svg,FALSE,FALSE,TRUE,TRUE,FALSE,TRUE,FALSE,0,4,0,0,0,0,0,0,0,TRUE,FALSE
 "Quebec City, Quebec",https://upload.wikimedia.org/wikipedia/commons/3/3a/Flag_of_Quebec_City.svg,FALSE,FALSE,TRUE,TRUE,FALSE,TRUE,FALSE,0,0,0,0,0,0,0,0,0,TRUE,FALSE
-"Surrey, British Columbia(Copyrighted)",https://upload.wikimedia.org/wikipedia/commons/2/2a/Flag_of_None.svg,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,,,,,,,,,
 "Regina, Saskatchewan",https://upload.wikimedia.org/wikipedia/commons/7/7d/Flag_of_Regina.svg,FALSE,FALSE,TRUE,TRUE,FALSE,TRUE,FALSE,0,2,0,0,0,0,0,0,0,TRUE,FALSE
 "Saint John, New Brunswick",https://upload.wikimedia.org/wikipedia/commons/2/2a/Flag_of_None.svg,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,,,,,,,,,
 "Toronto, Ontario",https://upload.wikimedia.org/wikipedia/commons/f/f2/Flag_of_Toronto%2C_Canada.svg,TRUE,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,0,0,0,0,0,0,0,0,0,TRUE,FALSE
@@ -719,7 +715,6 @@ the Panama City,https://upload.wikimedia.org/wikipedia/commons/3/31/Bandera_de_C
 "Columbus, Ohio",https://upload.wikimedia.org/wikipedia/commons/c/c5/Flag_of_Columbus%2C_Ohio.svg,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,3,0,0,0,0,0,16,0,0,TRUE,TRUE
 "Des Moines, Iowa",https://upload.wikimedia.org/wikipedia/commons/0/03/Flag_of_Des_Moines%2C_Iowa.svg,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE,0,7,0,0,0,0,0,0,0,FALSE,FALSE
 "Detroit, Michigan",https://upload.wikimedia.org/wikipedia/commons/e/ea/Flag_of_Detroit.svg,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,0,0,0,0,0,4,13,0,0,TRUE,TRUE
-"Grand Rapids, Michigan(Copyrighted)",https://upload.wikimedia.org/wikipedia/commons/2/2a/Flag_of_None.svg,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,,,,,,,,,
 "Green Bay, Wisconsin",https://upload.wikimedia.org/wikipedia/commons/2/2a/Flag_of_None.svg,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,,,,,,,,,
 "Indianapolis, Indiana",https://upload.wikimedia.org/wikipedia/commons/0/05/Flag_of_Indianapolis.svg,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE,0,0,1,0,1,0,1,0,0,FALSE,FALSE
 "Kansas City, Missouri",https://upload.wikimedia.org/wikipedia/commons/4/49/Flag_of_Kansas_City%2C_Missouri.svg,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE,3,0,0,0,0,0,0,0,0,TRUE,TRUE
@@ -754,7 +749,6 @@ the Panama City,https://upload.wikimedia.org/wikipedia/commons/3/31/Bandera_de_C
 "Providence, Rhode Island",https://upload.wikimedia.org/wikipedia/commons/2/2a/Flag_of_None.svg,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,,,,,,,,,
 "Taunton, Massachusetts",https://upload.wikimedia.org/wikipedia/commons/4/4b/Flag_of_Taunton%2C_Massachusetts.svg,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE,0,0,0,0,0,1,0,0,0,TRUE,TRUE
 "Trenton, New Jersey",https://upload.wikimedia.org/wikipedia/commons/c/c6/Flag_of_Trenton%2C_New_Jersey.svg,FALSE,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,2,0,1,6,0,0,0,0,0,TRUE,TRUE
-"Seattle, Washington(Copyrighted)",https://upload.wikimedia.org/wikipedia/commons/2/2a/Flag_of_None.svg,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,,,,,,,,,
 "Portland, Oregon",https://upload.wikimedia.org/wikipedia/commons/7/77/Flag_of_Portland%2C_Oregon.svg,FALSE,TRUE,FALSE,TRUE,FALSE,TRUE,FALSE,0,0,0,0,1,0,0,0,0,TRUE,FALSE
 "Asheville, North Carolina",https://upload.wikimedia.org/wikipedia/commons/9/92/City_of_Asheville_North_Carolina_Flag.jpg,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,3,0,0,0,0,0,0,0,0,TRUE,TRUE
 "Atlanta, Georgia",https://upload.wikimedia.org/wikipedia/commons/1/17/Flag_of_Atlanta.svg,FALSE,TRUE,FALSE,TRUE,TRUE,TRUE,FALSE,0,0,1,0,0,0,0,0,0,TRUE,TRUE
@@ -764,7 +758,6 @@ the Panama City,https://upload.wikimedia.org/wikipedia/commons/3/31/Bandera_de_C
 "Birmingham, Alabama",https://upload.wikimedia.org/wikipedia/commons/7/76/Flag_of_Birmingham%2C_Alabama.svg,TRUE,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,3,0,0,0,0,0,68,0,0,TRUE,TRUE
 "Carrollton, Texas",https://upload.wikimedia.org/wikipedia/commons/b/b7/Flag_of_Carrollton%2C_Texas.svg,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,0,0,1,0,0,0,0,0,0,TRUE,TRUE
 "Charleston, South Carolina",https://upload.wikimedia.org/wikipedia/commons/1/12/Flag_of_Charleston%2C_South_Carolina.svg,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE,0,0,1,0,0,0,0,0,0,TRUE,TRUE
-"Charlotte, North Carolina(Copyrighted)",https://upload.wikimedia.org/wikipedia/commons/2/2a/Flag_of_None.svg,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,,,,,,,,,
 "Corpus Christi, Texas",https://upload.wikimedia.org/wikipedia/commons/e/e7/Flag_of_Corpus_Christi%2C_Texas.svg,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,0,0,0,0,0,0,8,0,0,TRUE,FALSE
 "Dallas, Texas",https://upload.wikimedia.org/wikipedia/commons/9/9e/Flag_of_Dallas.svg,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,0,3,0,0,0,0,3,0,0,TRUE,TRUE
 "Denison, Texas",https://upload.wikimedia.org/wikipedia/commons/3/35/Flag_of_Denison%2C_Texas.svg,TRUE,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,3,3,0,0,0,0,1,0,0,FALSE,FALSE
@@ -781,19 +774,16 @@ the Panama City,https://upload.wikimedia.org/wikipedia/commons/3/31/Bandera_de_C
 "Mobile, Alabama",https://upload.wikimedia.org/wikipedia/commons/8/85/Flag_of_Mobile%2C_Alabama.png,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,0,3,0,3,0,0,0,0,0,TRUE,TRUE
 "Montgomery, Alabama",https://upload.wikimedia.org/wikipedia/commons/e/ee/Flag_of_Montgomery%2C_Alabama.svg,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,5,0,1,0,0,0,11,0,0,TRUE,TRUE
 "Naples, Florida",https://upload.wikimedia.org/wikipedia/commons/2/2a/Flag_of_None.svg,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,,,,,,,,,
-"Nashville, Tennessee(Copyrighted)",https://upload.wikimedia.org/wikipedia/commons/2/2a/Flag_of_None.svg,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,,,,,,,,,
 "New Orleans, Louisiana",https://upload.wikimedia.org/wikipedia/commons/d/da/Flag_of_New_Orleans%2C_Louisiana.svg,TRUE,FALSE,TRUE,TRUE,FALSE,TRUE,FALSE,0,3,0,0,0,0,0,0,0,TRUE,FALSE
 "Norfolk, Virginia",https://upload.wikimedia.org/wikipedia/commons/2/2a/Flag_of_None.svg,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,,,,,,,,,
 "Oklahoma City, Oklahoma",https://upload.wikimedia.org/wikipedia/commons/2/2a/Flag_of_None.svg,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,,,,,,,,,
 "Orlando, Florida",https://upload.wikimedia.org/wikipedia/commons/0/08/Flag_of_Orlando%2C_Florida.svg,FALSE,TRUE,FALSE,TRUE,FALSE,TRUE,FALSE,0,2,1,0,0,0,0,0,0,TRUE,FALSE
 "Raleigh, North Carolina",https://upload.wikimedia.org/wikipedia/commons/2/25/Flag_of_Raleigh%2C_North_Carolina.svg,TRUE,TRUE,FALSE,TRUE,FALSE,TRUE,FALSE,3,0,1,0,0,0,0,0,0,TRUE,TRUE
-"San Antonio, Texas(Copyrighted)",https://upload.wikimedia.org/wikipedia/commons/2/2a/Flag_of_None.svg,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,,,,,,,,,
 "St. Augustine, Florida",https://upload.wikimedia.org/wikipedia/commons/2/2a/Flag_of_None.svg,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,,,,,,,,,
 "St. Pete, Florida",https://upload.wikimedia.org/wikipedia/commons/d/da/Flag_of_St._Petersburg%2C_Florida.svg,FALSE,TRUE,TRUE,TRUE,FALSE,TRUE,FALSE,0,9,0,0,0,0,0,0,0,TRUE,FALSE
 "Savannah, Georgia",https://upload.wikimedia.org/wikipedia/commons/f/ff/Flag_of_Savannah%2C_Georgia.png,TRUE,FALSE,TRUE,TRUE,TRUE,FALSE,TRUE,0,0,0,0,0,0,13,0,0,TRUE,FALSE
 "Tampa, Florida",https://upload.wikimedia.org/wikipedia/commons/2/20/Flag_of_Tampa%2C_Florida.svg,TRUE,TRUE,TRUE,TRUE,FALSE,TRUE,FALSE,0,12,0,0,0,0,18,0,1,TRUE,TRUE
 "Albuquerque, Albuquerque",https://upload.wikimedia.org/wikipedia/commons/4/4c/Flag_of_Albuquerque%2C_New_Mexico.svg,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,0,0,0,0,0,0,0,0,0,TRUE,TRUE
-"Phoenix, Arizona(Copyrighted)",https://upload.wikimedia.org/wikipedia/commons/2/2a/Flag_of_None.svg,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,,,,,,,,,
 "Tucson, Arizona",https://upload.wikimedia.org/wikipedia/commons/b/bb/Flag_of_Tucson%2C_Arizona.png,FALSE,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,0,0,1,0,0,0,0,0,0,TRUE,TRUE
 "Anchorage, Alaska",https://upload.wikimedia.org/wikipedia/commons/3/32/Flag_of_Anchorage%2C_Alaska.svg,FALSE,FALSE,TRUE,TRUE,FALSE,TRUE,FALSE,0,0,1,1,0,0,0,0,0,TRUE,TRUE
 "Colorado Springs, Colorado",https://upload.wikimedia.org/wikipedia/commons/6/65/Flag_of_Colorado_Springs%2C_Colorado.svg,FALSE,TRUE,TRUE,TRUE,FALSE,TRUE,FALSE,0,0,0,0,0,0,0,0,0,TRUE,FALSE
@@ -809,7 +799,6 @@ the Panama City,https://upload.wikimedia.org/wikipedia/commons/3/31/Bandera_de_C
 "Roswell, New Mexico",https://upload.wikimedia.org/wikipedia/commons/d/d5/Flag_of_Roswell%2C_New_Mexico.svg,FALSE,TRUE,TRUE,TRUE,FALSE,TRUE,FALSE,0,5,0,0,0,0,0,0,0,TRUE,FALSE
 "Sacramento, California",https://upload.wikimedia.org/wikipedia/commons/b/b6/Flag_of_Sacramento%2C_California.svg,FALSE,TRUE,TRUE,TRUE,FALSE,TRUE,FALSE,0,3,0,0,0,0,0,0,0,TRUE,TRUE
 "San Diego, California",https://upload.wikimedia.org/wikipedia/commons/1/19/Flag_of_San_Diego%2C_California.svg,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,3,0,0,0,0,0,0,0,0,TRUE,TRUE
-"Santa Fe, New Mexico(Copyrighted)",https://upload.wikimedia.org/wikipedia/commons/2/2a/Flag_of_None.svg,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,,,,,,,,,
 "Salt Lake City, Utah",https://upload.wikimedia.org/wikipedia/commons/2/2a/Flag_of_None.svg,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,,,,,,,,,,,
 "San Francisco, California",https://upload.wikimedia.org/wikipedia/commons/a/af/Flag_of_San_Francisco.svg,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,0,0,0,0,0,0,0,0,0,TRUE,TRUE
 "San Jose, California",https://upload.wikimedia.org/wikipedia/commons/b/b0/Flag_of_San_Jos%C3%A9%2C_California.svg,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,0,3,1,0,0,0,2,0,0,TRUE,TRUE
