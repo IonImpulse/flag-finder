@@ -1,4 +1,4 @@
-,Name,URL,red,greenteal,blue,white,black,orangeyellow,purple,bars,stripes,circles,crosses,saltires,quarters,stars,crescents,triangles,contains_image,contains_text
+Name,URL,red,greenteal,blue,white,black,orangeyellow,purple,bars,stripes,circles,crosses,saltires,quarters,stars,crescents,triangles,contains_image,contains_text
 Porto-Novo,https://upload.wikimedia.org/wikipedia/commons/4/4a/Flag_of_Porto-Novo.svg,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,0,0,0,0,0,0,0,0,0,TRUE,TRUE
 Kinshasa,https://upload.wikimedia.org/wikipedia/commons/a/ad/Kinshasa_Flag.svg,FALSE,FALSE,TRUE,TRUE,FALSE,TRUE,FALSE,0,0,0,0,0,0,2,0,,FALSE,TRUE
 Abidjan,https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_Abidjan.png,FALSE,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,0,0,0,0,0,0,0,0,0,TRUE,TRUE
