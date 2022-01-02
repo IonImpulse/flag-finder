@@ -113,7 +113,7 @@ Batumi,https://upload.wikimedia.org/wikipedia/commons/1/11/Flag_of_Batumi.svg,TR
 Gori,https://upload.wikimedia.org/wikipedia/commons/6/63/Flag_of_Gori%2C_Georgia.svg,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,0,0,0,0,1,0,0,0,1,TRUE,FALSE
 Kutaisi,https://upload.wikimedia.org/wikipedia/commons/1/1f/Flag_of_Kutaisi%2C_Georgia.svg,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,0,0,0,0,5,0,0,0,0,FALSE,FALSE
 Poti,https://upload.wikimedia.org/wikipedia/commons/3/35/Flag_of_Poti.svg,TRUE,TRUE,FALSE,TRUE,TRUE,TRUE,FALSE,2,0,0,0,0,0,0,0,0,TRUE,FALSE
-Rustavi,https://upload.wikimedia.org/wikipedia/commons/2/25/Flag_of_Rustavi.svg,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,2,0,0,0,0,0,0,0,0,TRUE,FALSE
+Rustavi,https://upload.wikimedia.org/wikipedia/commons/2/25/Flag_of_Rustavi.svg,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,2,0,0,0,0,0,0,0,0,TRUE,FALSE
 Tbilisi,https://upload.wikimedia.org/wikipedia/commons/3/31/Flag_of_Tbilisi.svg,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,0,0,0,0,0,0,7,0,0,TRUE,FALSE
 Telavi,https://upload.wikimedia.org/wikipedia/commons/c/cf/Flag_of_Telavi_%28City%29.svg,TRUE,FALSE,TRUE,TRUE,TRUE,FALSE,TRUE,0,2,0,0,0,0,0,0,0,TRUE,FALSE
 Zugdidi,https://upload.wikimedia.org/wikipedia/commons/e/e6/Flag_of_Zugdidi_%28City%29.svg,FALSE,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,0,0,0,0,0,0,0,0,0,TRUE,FALSE
