@@ -2,7 +2,7 @@ Name,URL,red,greenteal,blue,white,black,orangeyellow,purple,bars,stripes,circles
 Afghanistan,https://flagcdn.com/w640/af.png,TRUE,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,0,3,0,0,0,0,1,0,0,TRUE,FALSE
 Albania,https://flagcdn.com/w640/al.png,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,0,0,0,0,0,0,1,0,0,FALSE,FALSE
 Algeria,https://flagcdn.com/w640/dz.png,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,2,0,0,0,0,0,1,1,0,FALSE,FALSE
-American Samoa,https://flagcdn.com/w640/as.png,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,0,0,0,0,0,0,0,0,1,TRUE,FALSE
+American Samoa,https://flagcdn.com/w640/as.png,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,0,0,0,0,0,0,0,0,1,TRUE,FALSE
 Andorra,https://flagcdn.com/w640/ad.png,TRUE,FALSE,TRUE,TRUE,FALSE,TRUE,FALSE,3,0,0,0,0,0,0,0,0,FALSE,FALSE
 Angola,https://flagcdn.com/w640/ao.png,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,0,2,0,0,0,0,1,0,0,TRUE,FALSE
 Anguilla,https://flagcdn.com/w640/ai.png,TRUE,FALSE,TRUE,TRUE,FALSE,TRUE,FALSE,0,1,0,0,0,0,0,0,0,FALSE,FALSE
@@ -19,7 +19,7 @@ Belize,https://flagcdn.com/w640/bz.png,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE,FALSE,0,2
 Benin,https://flagcdn.com/w640/bj.png,TRUE,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,0,0,0,0,0,0,1,0,0,FALSE,FALSE
 Bermuda,https://flagcdn.com/w640/bm.png,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE,FALSE,0,0,1,1,1,1,0,0,0,TRUE,FALSE
 Bhutan,https://flagcdn.com/w640/bt.png,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE,0,0,4,0,0,0,0,0,0,FALSE,FALSE
-Bolivia,https://flagcdn.com/w640/bo.png,TRUE,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,0,3,0,0,0,0,0,0,0,FALSE,FALSE
+Bolivia,https://flagcdn.com/w640/bo.png,FALSE,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,0,3,0,0,0,0,0,0,0,FALSE,FALSE
 Botswana,https://flagcdn.com/w640/bw.png,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,0,5,0,0,0,0,0,0,0,FALSE,FALSE
 Brazil,https://flagcdn.com/w640/br.png,FALSE,TRUE,TRUE,TRUE,FALSE,TRUE,FALSE,0,0,1,0,0,0,22,0,0,FALSE,TRUE
 British Virgin Isles,flag-photos/countries/BritishVirginIslands.png,TRUE,TRUE,TRUE,TRUE,FALSE,TRUE,FALSE,0,0,0,1,1,1,0,0,0,TRUE,TRUE

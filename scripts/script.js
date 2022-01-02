@@ -1,3 +1,15 @@
+const FLAG_FILES = [
+    "countries.csv",
+    "pride.csv",
+    "organizations.csv",
+    "us_state_territory_flags.csv",
+    "corporations.csv",
+    "ideologies.csv",
+    "cities_of_the_world.csv"
+];
+
+
+
 async function load_data(csv_name) {
     return new Promise((resolve, reject) => {
         Papa.parse(`https://raw.githubusercontent.com/IonImpulse/smart-flag-finder/main/data/${csv_name}`, {
@@ -16,16 +28,6 @@ async function load_data(csv_name) {
 }
 
 async function start() {
-    const FLAG_FILES = [
-        "countries.csv",
-        "pride.csv",
-        "organizations.csv",
-        "us_state_territory_flags.csv",
-        "corporations.csv",
-        "ideologies.csv",
-        "cities_of_the_world.csv"
-    ];
-
     console.log("Loading data...");
 
     let flag_data_promises = [];
@@ -36,13 +38,15 @@ async function start() {
     
     flag_data_promises = await Promise.all(flag_data_promises);
 
-    let flag_data = flag_data_promises.flat();
-
-    for (flag of flag_data) {
-        if (flag.Name == null) {
-            flag_data.splice(flag_data.indexOf(flag), 1);
+    for (flag_group of flag_data_promises) {
+        for (flag of flag_group) {
+            if (flag.Name == null) {
+                flag_group.splice(flag_group.indexOf(flag), 1);
+            }
         }
     }
+
+    let flag_data = flag_data_promises.flat();
 
     console.log("Loaded data!");
 
@@ -63,7 +67,6 @@ async function start_click() {
     
     if (sessionStorage.getItem("flag_data") == false) {
         console.log("Redoing flag data request!");
-        let flag_data = await start();
         sessionStorage.setItem("flag_data", JSON.stringify(await start()));
     }
 
@@ -73,12 +76,11 @@ async function start_click() {
 async function view_click() {
     if (sessionStorage.getItem("flag_data") == false) {
         console.log("Redoing flag data request!");
-        let flag_data = await start();
         sessionStorage.setItem("flag_data", JSON.stringify(await start()));
     }
     
     let flags_left = JSON.parse(sessionStorage.getItem("flag_data"));
-    show_remaining_flags(flags_left);
+    show_remaining_flags(flags_left, false);
 }
 
 function delete_button() {
@@ -284,8 +286,6 @@ function setup() {
     document.getElementById("answers-holder").style.opacity = 0;
     let flags_left = JSON.parse(sessionStorage.getItem("flag_data"));
     let attributes_available = {
-        name: true,
-        url: true,
         red: true,
         greenteal: true,
         blue: true,
@@ -319,7 +319,13 @@ function setup() {
     main();
 }
 
-function show_remaining_flags(flags_left) {
+function show_remaining_flags(flags_left, show_stats) {
+    let iterations = parseInt(sessionStorage.getItem("iterations"));
+    let attributes_available = JSON.parse(sessionStorage.getItem("attributes_available"));
+
+    if (show_stats == true) {
+        animate_stats(flags_left.length, flags_left.length, iterations + 1, Object.keys(attributes_available).length);
+    }
     let question_element = document.getElementById("question-holder");
     question_element.innerHTML = `<div id="question" class="good-button" onclick="setup()">RESULTS (Click to reset)</div>`;
 
@@ -330,8 +336,59 @@ function show_remaining_flags(flags_left) {
     } else {
         let flag_id = 0;
         for (flag of flags_left) {
+            let flag_info = `Colors: `;
+
+            // Add flag colors to flag_info string
+            if (flag.red == true) {
+                flag_info += `<attribute-flag class="flag-red">red</attribute-flag>, `;
+            }
+            if (flag.greenteal == true) {
+                flag_info += `<attribute-flag class="flag-green">green</attribute-flag>/<attribute-flag class="flag-teal">teal</attribute-flag>, `;
+            }
+            if (flag.blue == true) {
+                flag_info += `<attribute-flag class="flag-blue">blue</attribute-flag>, `;
+            }
+            if (flag.white == true) {
+                flag_info += `<attribute-flag class="flag-white">white</attribute-flag>, `;
+            }
+            if (flag.black == true) {
+                flag_info += `<attribute-flag class="flag-black">black</attribute-flag>, `;
+            }
+            if (flag.orangeyellow == true) {
+                flag_info += `<attribute-flag class="flag-orange">orange</attribute-flag>/<attribute-flag class="flag-yellow">yellow</attribute-flag>, `;
+            }
+            if (flag.purple == true) {
+                flag_info += `<attribute-flag class="flag-purple">purple</attribute-flag>, `;
+            }
+
+            // Remove trailing comma
+            flag_info = flag_info.slice(0, -2);
+
+            flag_info += "<br>Attributes: ";
+
+            for (attribute of Object.keys(flag)) {
+                if (["red", "greenteal", "blue", "white", "black", "orangeyellow", "purple", "URL", "Name"].includes(attribute) == false) {
+
+                    if (typeof(flag[attribute]) == 'boolean') {
+                        if (flag[attribute] == true) {
+                            flag_info += `${attribute}, `;                        
+                        }
+                    } else {
+                        if (flag[attribute] > 0) {
+                            flag_info += `${attribute}=${flag[attribute]}, `;
+                        }
+                    }
+                }
+            }
+
+            // Remove trailing comma
+            flag_info = flag_info.slice(0, -2);
+            
             output += `<div class="flag-frame">
-        <img class="flag" id="flag-${flag_id}" src="${flag.URL}" onclick="show_information_about_flag('flag-${flag_id}')" width=320px>
+        <div class="flag-frame-inner">
+            <img class="lazyload flag" id="flag-${flag_id}" data-src="${flag.URL}" onclick="show_information_about_flag('${flag_id}')" width=320px>
+            <div class="flag-info-text" id="flag-info-${flag_id}" style="opacity: 0%">${flag_info}</div>
+        </div>
         <div class="sub">${flag.Name}</div></div>
         `;
             flag_id++;
@@ -345,19 +402,47 @@ function show_remaining_flags(flags_left) {
 
 // function called when user clicks on a flag to show information about it
 function show_information_about_flag(flag_id) {
-    let flag_element = document.getElementById(flag_id);
-    
+    let flag_element = document.getElementById(`flag-${flag_id}`);
+    let flag_info_element = document.getElementById(`flag-info-${flag_id}`)
     if (flag_element.style.filter != 'blur(10px)') {
         flag_element.style.filter = 'blur(10px)';
-        
+        flag_info_element.style.opacity = 100;
     } else {
         flag_element.style.filter = 'blur(0px)';
+        flag_info_element.style.opacity = 0;
     }
 
     
 }
 
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
 
+// Function to animate the number of flags remaining counting down
+async function animate_stats(num_flags_left, num_previous_flags_left, round_num, total_rounds) {
+    
+    let stats_element = document.getElementById("stats-holder");
+    let stats_to_set = `<div id="stats">Round: ${round_num}/${total_rounds} | Flags Remaining: ${insert_commas(num_previous_flags_left)}</div>`;
+
+    stats_element.innerHTML = stats_to_set;
+    stats_element.opacity = 100;
+
+    let total_time_to_wait = 1000;
+    let individual_time_to_wait = total_time_to_wait/(num_previous_flags_left-num_flags_left);
+
+    console.log(`Counting down from ${num_previous_flags_left} to ${num_flags_left}`);
+
+    for (let num = num_previous_flags_left; num >= num_flags_left; num--) {
+        let info = `Round: ${round_num}/${total_rounds} | Flags Remaining: ${insert_commas(num)}`;
+        let stats_to_set = `<div id="stats">${info}</div>`;
+        stats_element.innerHTML = stats_to_set;
+        await sleep(individual_time_to_wait);
+        if (document.getElementById("stats").innerHTML != info) {
+            return
+        }
+    }
+}
 async function main() {
     const yes_no_buttons = `
     <div>
@@ -384,8 +469,9 @@ async function main() {
     let last_question_type = sessionStorage.getItem("last_question_type");
     let last_answer = sessionStorage.getItem("last_answer");
     
-    console.log(flags_left, attributes_available, iterations, last_question, last_question_type, last_answer);
-
+    //console.log(flags_left, attributes_available, iterations, last_question, last_question_type, last_answer);
+    let flags_left_previous = flags_left.length;
+    
     if (last_question !== "") {
         if (last_question_type == "bool") {
             if (last_answer == "true") {
@@ -418,21 +504,20 @@ async function main() {
 
     let button_placeholder = document.getElementById("choices-holder");
 
-    if (flags_left.length <= 6) {
-        show_remaining_flags(flags_left);
+    animate_stats(flags_left.length, flags_left_previous, iterations + 1, Object.keys(attributes_available).length);
 
-    } else if (!empty_attributes(attributes_available) && flags_left.length > 1 && iterations < 30) {
+    if (flags_left.length <= 6 || empty_attributes(attributes_available)) {
+        show_remaining_flags(flags_left, true);
+
+    } else if (!empty_attributes(attributes_available) && flags_left.length > 1) {
         
         let attribute = find_most_divisive(flags_left, attributes_available);
 
         const question_response = return_question(attribute);
 
-        let question_to_set = `<div id="question">${question_response.question}</div>`;
-
         let question_element = document.getElementById("question-holder");
-
+        let question_to_set = `<div id="question">${question_response.question}</div>`;
         question_element.innerHTML = question_to_set;
-    
         question_element.style.opacity = 100;
         
         if (question_response.type == "bool") {

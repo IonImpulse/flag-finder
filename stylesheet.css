@@ -112,7 +112,6 @@ attribute-flag {
 }
 
 .flag:hover {
-    transform: translate(.2vmax, .2vmax);
     box-shadow: .5vmax .5vmax #3C14D0;
     cursor: pointer;
 }
@@ -203,7 +202,37 @@ attribute-flag {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1vmax;
+}
+
+#stats-holder {
+    margin-top: 2%;
+    margin-bottom: 2vmax;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#stats {
+    font-family: 'JetBrains Mono', monospace;
+    /*placement for code pen*/
+    margin: 0 auto;
+    /*Button Text Style*/
+    font-size: .8vmax;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 0.1vmax;
+    text-decoration:none;
+    /*Button Color & Border*/
+    border: .2vmax solid #ffffff ;
+    color: #ffffff;
+    background: rgb(189, 37, 37);
+    outline: none;
+    /*Position, Display, Size*/
+    position: relative;
+    display: inline-block;
+    padding: 1vmax .75vmax 1vmax;
+    width: auto;
+    box-shadow: .5vmax .5vmax rgb(189, 37, 37);
 }
 
 [type="number"]::-webkit-inner-spin-button,
@@ -226,7 +255,7 @@ input[type=number] {
 }
 
 .stepper input {
-  width: 5em;
+  max-width: 5em;
   font-family: 'JetBrains Mono', monospace;
   font-size: 30px;
   height: 100%;
@@ -254,7 +283,7 @@ input[type=number] {
     /*placement for code pen*/
     margin: 0 auto;
     margin-top: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 25px;
     /*Button Text Style*/
     text-align: center;
     font-weight: bold;
@@ -283,4 +312,48 @@ a:link {
   /* visited link */
 a:visited {
     color: #83c3eb;
+}
+
+.flag-frame-inner {
+    position:relative;
+    transition: all ease-in-out .3s, transform ease-in-out .1s;
+}
+
+.flag-info-text {
+    position: absolute;
+    top: 0;
+    padding: 1vmax;
+    transition: all ease-in-out .3s, transform ease-in-out .1s;
+    background-color: #0000006b;
+    border: 0px solid #000;
+    border-radius: 15px;
+    -moz-border-radius: 15px;
+    color:#ffffff;
+    font-family: JetBrains Mono, monospace;
+    width: 280px;
+    font-size: 13px;
+    pointer-events: none;
+    line-height: 30px;
+    z-index: 9999;
+}
+
+.flag-frame-inner:hover {
+    transform: translate(5px, 5px);
+    cursor: pointer;
+}
+
+.bottom-footer {
+    width: 98%;
+    height: 100px;
+    background-color: #3C14D0;
+    color: #ffffff;
+    text-align: center;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border: 5px solid white;
 }
