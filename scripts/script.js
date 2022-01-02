@@ -12,7 +12,7 @@ const FLAG_FILES = [
 
 async function load_data(csv_name) {
     return new Promise((resolve, reject) => {
-        Papa.parse(`https://raw.githubusercontent.com/IonImpulse/smart-flag-finder/main/data/${csv_name}`, {
+        Papa.parse(`https://raw.githubusercontent.com/IonImpulse/flag-finder/main/data/${csv_name}`, {
             download: true,
             dynamicTyping: true,
             worker: true,
