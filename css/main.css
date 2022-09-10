@@ -404,3 +404,86 @@ label:hover:before {
   overflow-x: hidden;
   flex-grow: 1;
 }
+
+#game-window, #game-intro {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-y: unset;
+}
+
+#play-title {
+    font-size: 8em;
+    margin-bottom: 10px;
+}
+
+.overlay-effect {
+    position: relative;
+    font-weight: 900;
+}
+
+.overlay-effect::before {
+    position: absolute;
+    content: "OVERLAY";
+    color: rgb(0, 225, 255);
+    opacity: 0;
+    animation: chrome-ramp-l 2s ease-in-out infinite alternate;
+}
+
+.overlay-effect::after {
+    position: absolute;
+    content: "OVERLAY";
+    color: rgb(255, 0, 0);
+    opacity: 0;
+    animation: chrome-ramp-r 2s ease-in-out infinite alternate .5s;
+}
+
+@keyframes chrome-ramp-l {
+    0% {
+        opacity: 0;
+        top: 0px;
+        left: 0px;
+    }
+    20% {
+        opacity: 0;
+        top: 0px;
+        left: 0px;
+    }
+    100% {
+        opacity: .5;
+        top: 10px;
+        left: -10px;
+    }
+}
+@keyframes chrome-ramp-r {
+    0% {
+        opacity: 0;
+        top: 0px;
+        left: 0px;
+    }
+    40% {
+        opacity: 0;
+        top: 0px;
+        left: 0px;
+    }
+    100% {
+        opacity: .5;
+        top: -10px;
+        left: 10px;
+    }
+}
+
+#start-game {
+    width: 200px;
+    height: 100px;
+    background-color: var(--theme-color-2);
+}
+
+#play-explanation-text {
+    font-size: 1.5em;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}

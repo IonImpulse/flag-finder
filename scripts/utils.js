@@ -1,6 +1,11 @@
 var state = {
     flags: null,
     page: "home",
+    game_state: {
+        screen: "game-intro",
+        answer: null,
+        guessed_flags: [],
+    }
 }
 
 const FLAG_FILES = {

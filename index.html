@@ -199,7 +199,21 @@
         </div>
 
         <div id="play" class="page hidden">
-            Play
+            <div class="content-container">
+                <div id="game-intro">
+                    <h1 id="play-title" class="overlay-effect">OVERLAY</h1>
+                    <p id="play-explanation-text">
+                        The <b>COMPUTER</b> picks a flag
+                        <br>
+                        The <b>USER</b> guesses the flag
+                        <br>
+                        The <b>COMPUTER</b> <span class="overlay-effect"><b>OVERLAY</b></span>s the flags
+                    </p>
+                    <button id="start-game" onclick="startGame()"><b>START</b></button>
+                </div>
+
+                <div id="game-window" class="hidden"></div>
+            </div>
         </div>
 
         <div id="about" class="page hidden">

@@ -19,7 +19,7 @@ function startRandomFlagGrid() {
     for (let i = 0; i < max_grid_elements; i++) {
         setTimeout(() => {
             const container = grid.children[i];
-            const flag = generateRandomFlag();
+            const flag = generateRandomFlagDiv();
             flag.classList.add("fade-in");
 
             container.appendChild(flag);
@@ -28,7 +28,7 @@ function startRandomFlagGrid() {
 
     setTimeout(() => {
         setInterval(() => {
-            let flag = generateRandomFlag();
+            let flag = generateRandomFlagDiv();
             flag.classList.add("fade-in");
             // Get random container
             let container = grid.children[Math.floor(Math.random() * grid.children.length)];
@@ -44,8 +44,11 @@ function startRandomFlagGrid() {
     }, max_grid_elements * 40); 
 }
 
+function getRandomFlag() {
+    return state.flags[Math.floor(Math.random() * state.flags.length)];
+}
 
-function generateRandomFlag() {
+function generateRandomFlagDiv() {
     let flag = state.flags[Math.floor(Math.random() * state.flags.length)];
 
     let div = createFlagDiv(flag, true, false, ["small", "home"]);
