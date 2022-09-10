@@ -51,10 +51,6 @@
                 Search
             </button>
 
-            <button id="Find" onclick="setPage('find')">
-                Find
-            </button>
-
             <button id="Play" onclick="setPage('play')">
                 Play
             </button>
@@ -235,7 +231,37 @@
         </div>
 
         <div id="about" class="page hidden">
-            About
+            <div id="about-page" class="content-container">
+                <h1>
+                    Flag Data
+                </h1>
+                <p>
+                    All flag data was collected manually, based off of schema found somewhere on the Internet.
+                    <br><br>
+                    Flag images link to Wikipedia when available for high quality SVGs, but otherwise are saved
+                    locally on GitHub.
+                    Country flags specifically are sourced from <a href="https://flagpedia.net/">Flagpedia</a>.
+                    <br><br>
+                    There are currently 1,456 flags in the database, in 7 data sets.    
+                </p>
+                
+                <h1>
+                    Credits
+                </h1>
+
+                <h2>
+                    Made by Ethan Vazquez
+                </h2>
+                <h3>
+                    Libraries Used
+                    <ul>
+                        <li>fuzzysort.js</li>
+                        <li>lazysizes.js</li>
+                        <li>papaparse.js</li>
+                    </ul>
+                </h3>
+            </div>
+
         </div>
     </div>
 
