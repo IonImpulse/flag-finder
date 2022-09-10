@@ -10,7 +10,7 @@ const FLAG_FILES = {
     "US States & Territories": "us_state_territory_flags.csv",
     "Coporations": "corporations.csv",
     "Ideologies": "ideologies.csv",
-    "World Cities": "cities_of_the_world.csv"
+    "Cities of the World": "cities_of_the_world.csv"
 };
 
 async function load_data(name, csv_path) {
@@ -35,8 +35,6 @@ async function load_data(name, csv_path) {
 }
 
 async function loadAllFlags() {
-    console.log("Loading data...");
-
     let flag_data_promises = [];
 
     for (key of Object.keys(FLAG_FILES)) {
@@ -56,9 +54,6 @@ async function loadAllFlags() {
     let flag_data = flag_data_promises.flat();
 
     state.flags = flag_data;
-
-    console.log("Data loaded.");
-    console.log(state);
 }
 
 function createFlagDiv(flag, hover = false, clickable = false, extra_classes = []) {
