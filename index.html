@@ -84,7 +84,7 @@
                     <div id="search-bar">
                         <input id="search-input" type="text" placeholder="Search for a flag" onchange="search()">
 
-                        <button id="search-button" onclick="search()">
+                        <button class="search-button" onclick="search()">
                             <img src="img/search.svg" alt="Search">
                         </button>
                     </div>
@@ -212,7 +212,25 @@
                     <button id="start-game" onclick="startGame()"><b>START</b></button>
                 </div>
 
-                <div id="game-window" class="hidden"></div>
+                <div id="game-window" class="hidden">
+
+                    <div id="guess-container">
+                        <input id="guess-input" type="text" placeholder="ENTER a GUESS" onchange="guess()">
+                        <button class="search-button" onclick="guess()">
+                            <img src="img/search.svg" alt="Search">
+                        </button>
+                    </div>
+
+                    <div id="flag-guess-container">
+                        <div id="current-guess">
+
+                        </div>
+                    </div>
+
+                    <div id="previous-guesses">
+                        
+                    </div>
+                </div>
             </div>
         </div>
 

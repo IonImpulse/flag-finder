@@ -332,14 +332,14 @@ input {
   border-right: unset;
 }
 
-#search-button {
+.search-button {
   background-color: var(--theme-color-2);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-#search-button img {
+.search-button img {
   width: 20px;
   height: 20px;
 }
@@ -405,7 +405,7 @@ label:hover:before {
   flex-grow: 1;
 }
 
-#game-window, #game-intro {
+#game-intro {
     width: 100%;
     height: 100%;
     display: flex;
@@ -413,6 +413,21 @@ label:hover:before {
     justify-content: center;
     align-items: center;
     overflow-y: unset;
+}
+
+#game-window {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-areas: "guess guess-list"
+                       "current guess-list";
+  grid-template-rows: 1fr 8fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+#flag-guess-container {
+  grid-area: current;
 }
 
 #play-title {
@@ -486,4 +501,49 @@ label:hover:before {
     font-size: 1.5em;
     margin-top: 10px;
     margin-bottom: 50px;
+}
+
+#guess-container {
+  grid-area: guess;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.overlay {
+  position: relative;
+  filter: invert(100%);
+}
+
+.flag.transparent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  filter: grayscale(100%);
+  mix-blend-mode: difference;
+
+}
+
+.flag.play.answer {
+  filter: grayscale(100%);
+}
+
+.overlay-pair {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+#previous-guesses {
+  gap: 10px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  flex-grow: 1;
+  grid-area: guess-list;
+}
+
+#guess-input {
+  height: 40px;
 }
