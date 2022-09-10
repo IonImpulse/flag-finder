@@ -4,67 +4,301 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Flag Finder</title>
-        <meta name="description" content="A website to quickly and easily find various flags.">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="stylesheet.css">
-        <link rel="shortcut icon" type="image/png" href="favicon.ico?">
 
-        <meta property="og:title" content="Flag Finder" />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.flagfinder.app/" />
-        <meta property="og:image" content="https://www.flagfinder.app/example-flags/un.svg" />
-        <meta property="og:description" content="A website to quickly and easily find various flags." />
-        <meta name="theme-color" content="#2b1849">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Flag Finder</title>
+    <meta name="description" content="A website to quickly and easily find various flags.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="favicon.ico?">
 
-        <!-- Include this to make the og:image larger -->
-        <meta name="twitter:card" content="summary_large_image">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@200;400&family=Righteous&display=swap"
+        rel="stylesheet">
 
-    </head>
+    <link rel="stylesheet" href="css/main.css">
+    <meta property="og:title" content="Flag Finder" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.flagfinder.app/" />
+    <meta property="og:image" content="https://www.flagfinder.app/example-flags/un.svg" />
+    <meta property="og:description" content="A website to quickly and easily find various flags." />
+    <meta name="theme-color" content="#2b1849">
 
-    
-    <body>
-        <!--[if lt IE 7]>
+    <!-- Include this to make the og:image larger -->
+    <meta name="twitter:card" content="summary_large_image">
+
+</head>
+
+
+<body>
+    <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        
-        <div id="top" onclick="go_home()"">
-            <div class="subtext">
-                Vazquez Inc.
-            </div>
-            Flag Finder
-            <div class="subtext" id="subtext">
-                [ With a database of <number-flag>...</number-flag> flags and counting ]
-            </div>
-        </div>
-        
-        <div id="question-holder"></div>      
 
-        <div id="stats-holder"></div>
-        
-        <div id="choices-holder">
-            <div class="good-button" id="start-button" onclick="start_click()">
-                START
-            </div>
-            
-            <div class="good-button" id="view-button" onclick="view_click()">
-                VIEW All FLAGS
-            </div>
-        </div>        
+    <div id="main-grid">
+        <div id="header" class="load">
+            <button id="Logo" onclick="setPage('home')"">
+            </button>
 
-        <div id="answers-holder"></div>
-        
-        <div class="sub">
-            Thanks to  <a href="https://flagpedia.net/">Flagpedia</a> for many of the flags used!
+            <button id=" Home" onclick="setPage('home')">
+                Home
+            </button>
+
+            <button id="Search" onclick="setPage('search')">
+                Search
+            </button>
+
+            <button id="Play" onclick="setPage('play')">
+                Play
+            </button>
+
+            <button id="About" onclick="setPage('about')">
+                About
+            </button>
         </div>
 
-        
-        <script src="scripts/lazysizes.min.js" async=""></script>
-        <script src="scripts/papaparse.min.js"></script>
-        <script src="scripts/script.js" async defer></script>
-    </body>
+        <div id="home" class="page">
+            <h1 id="welcome-message">
+                Welcome to <span class="highlight">Flag Finder</span>
+            </h1>
+
+            <div id="random-flag-grid">
+
+            </div>
+        </div>
+
+        <div id="find" class="page hidden">
+            Find
+        </div>
+
+        <div id="search" class="page scroll hidden">
+            <div class="content-container">
+                <div id="search-container">
+                    <div id="search-bar">
+                        <input id="search-input" type="text" placeholder="Search for a flag" onchange="search()">
+
+                        <button class="search-button" onclick="search()">
+                            <img src="img/search.svg" alt="Search">
+                        </button>
+                    </div>
+
+                    <div id="filters-bar">
+                        <div id="data-set-filters" class="filter-box">
+                            <!--
+                                Data sets: Countries, Cities of the World, Corporations, Ideologies, Organizations, Pride, US States & Territories
+                                -->
+                            <input type="checkbox" id="countries" name="countries" value="Countries">
+                            <label for="countries">Countries</label>
+
+                            <input type="checkbox" id="cities" name="cities" value="Cities of the World">
+                            <label for="cities">Cities</label>
+
+                            <input type="checkbox" id="corporations" name="corporations" value="Corporations">
+                            <label for="corporations">Corporations</label>
+
+                            <input type="checkbox" id="ideologies" name="ideologies" value="Ideologies">
+                            <label for="ideologies">Ideologies</label>
+
+                            <input type="checkbox" id="organizations" name="organizations" value="Organizations">
+                            <label for="organizations">Organizations</label>
+
+                            <input type="checkbox" id="pride" name="pride" value="Pride">
+                            <label for="pride">Pride</label>
+
+                            <input type="checkbox" id="us-states" name="us-states" value="US States & Territories">
+                            <label for="us-states">US States</label>
+                        </div>
+
+                        <div id="color-filters" class="filter-box">
+                            <!--
+                                Colors: red,greenteal,blue,white,black,orangeyellow,purple
+                                -->
+                            <input type="checkbox" id="red" name="red" value="red">
+                            <label for="red">Red</label>
+
+                            <input type="checkbox" id="greenteal" name="greenteal" value="greenteal">
+                            <label for="greenteal">Green / Teal</label>
+
+                            <input type="checkbox" id="blue" name="blue" value="blue">
+                            <label for="blue">Blue</label>
+
+                            <input type="checkbox" id="white" name="white" value="white">
+                            <label for="white">White</label>
+
+                            <input type="checkbox" id="black" name="black" value="black">
+                            <label for="black">Black</label>
+
+                            <input type="checkbox" id="orangeyellow" name="orangeyellow" value="orangeyellow">
+                            <label for="orangeyellow">Orange / Yellow</label>
+
+                            <input type="checkbox" id="purple" name="purple" value="purple">
+                            <label for="purple">Purple</label>
+                        </div>
+
+                        <div id="shapes-filters" class="filter-box">
+                            <!--
+                                Shapes: bars,stripes,circles,crosses,saltires,quarters,stars,crescents,triangles
+                                -->
+                            <input type="checkbox" id="bars" name="bars" value="bars">
+                            <label for="bars">Bars</label>
+
+                            <input type="checkbox" id="stripes" name="stripes" value="stripes">
+                            <label for="stripes">Stripes</label>
+
+                            <input type="checkbox" id="circles" name="circles" value="circles">
+                            <label for="circles">Circles</label>
+
+                            <input type="checkbox" id="crosses" name="crosses" value="crosses">
+                            <label for="crosses">Crosses</label>
+
+                            <input type="checkbox" id="saltires" name="saltires" value="saltires">
+                            <label for="saltires">Saltires</label>
+
+                            <input type="checkbox" id="quarters" name="quarters" value="quarters">
+                            <label for="quarters">Quarters</label>
+
+                            <input type="checkbox" id="stars" name="stars" value="stars">
+                            <label for="stars">Stars</label>
+
+                            <input type="checkbox" id="crescents" name="crescents" value="crescents">
+                            <label for="crescents">Crescents</label>
+
+                            <input type="checkbox" id="triangles" name="triangles" value="triangles">
+                            <label for="triangles">Triangles</label>
+                        </div>
+
+                        <div id="misc-filters" class="filter-box">
+                            <!--
+                                Misc: contains text, contains image
+                                -->
+                            <input type="checkbox" id="contains_text" name="contains_text" value="contains_text">
+                            <label for="contains_text">Contains Text</label>
+
+                            <input type="checkbox" id="contains_image" name="contains_image" value="contains_image">
+                            <label for="contains_image">Contains Image</label>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div id="search-results">
+
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+        <div id="play" class="page hidden">
+            <div class="content-container">
+                <div id="game-intro">
+                    <h1 id="play-title" class="overlay-effect">OVERLAY</h1>
+                    <p id="play-explanation-text">
+                        The <b>COMPUTER</b> picks a flag
+                        <br>
+                        The <b>USER</b> guesses the flag
+                        <br>
+                        The <b>COMPUTER</b> <span class="overlay-effect"><b>OVERLAY</b></span>s the flags
+                    </p>
+                    <button id="start-game" onclick="startGame()"><b>START</b></button>
+                </div>
+
+                <div id="game-window" class="hidden">
+
+                    <div id="guess-container">
+                        <input id="guess-input" type="text" placeholder="ENTER a GUESS" onchange="guess()">
+                        <button class="search-button" onclick="guess()">
+                            <img src="img/search.svg" alt="Search">
+                        </button>
+                    </div>
+
+                    <div id="flag-guess-container">
+                        <h1>
+                            CURRENT GUESS
+                        </h1>
+                        <div id="current-guess">
+
+                        </div>
+                    </div>
+
+                    <div id="previous-guesses">
+                        <h1>
+                            PREVIOUS GUESSES
+                        </h1>
+                    </div>
+                </div>
+
+                <div id="win-window" class="hidden">
+                    <h1 id="win-title" class="overlay-effect">YOU WIN</h1>
+                    <p id="win-explanation-text">
+                        The <b>COMPUTER</b> picked the flag <span id="win-flag-name"></span>
+                        <br>
+                        The <b>USER</b> guessed the flag in <span id="win-guesses"></span> guesses
+                        <br>
+                        The <b>COMPUTER</b> <span class="overlay-effect"><b>OVERLAY</b></span>ed the flags
+                    </p>
+
+                    <div id="answer-flag">
+
+                    </div>
+                    <button id="play-again" onclick="startGame()"><b>PLAY AGAIN</b></button>
+                </div>
+            </div>
+        </div>
+
+        <div id="about" class="page hidden">
+            <div id="about-page" class="content-container">
+                <h1>
+                    Flag Data
+                </h1>
+                <p>
+                    All flag data was collected manually, based off of schema found somewhere on the Internet.
+                    <br><br>
+                    Flag images link to Wikipedia when available for high quality SVGs, but otherwise are saved
+                    locally on GitHub.
+                    Country flags specifically are sourced from <a href="https://flagpedia.net/">Flagpedia</a>.
+                    <br><br>
+                    There are currently 1,456 flags in the database, in 7 data sets.    
+                </p>
+                
+                <h1>
+                    Credits
+                </h1>
+
+                <h2>
+                    Made by Ethan Vazquez
+                </h2>
+                <h3>
+                    Libraries Used
+                    <ul>
+                        <li>fuzzysort.js</li>
+                        <li>lazysizes.js</li>
+                        <li>papaparse.js</li>
+                    </ul>
+                </h3>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="scripts/libs/fuzzysort.min.js"></script>
+    <script src="scripts/libs/lazysizes.min.js"></script>
+    <script src="scripts/libs/papaparse.min.js"></script>
+
+    <script src="scripts/utils.js"></script>
+    <script src="scripts/page_home.js"></script>
+    <script src="scripts/page_find.js"></script>
+    <script src="scripts/page_search.js"></script>
+    <script src="scripts/page_play.js"></script>
+    <script src="scripts/page_about.js"></script>
+
+    <script src="scripts/start.js"></script>
+</body>
 
 </html>
