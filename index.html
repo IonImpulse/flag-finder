@@ -218,14 +218,35 @@
                     </div>
 
                     <div id="flag-guess-container">
+                        <h1>
+                            CURRENT GUESS
+                        </h1>
                         <div id="current-guess">
 
                         </div>
                     </div>
 
                     <div id="previous-guesses">
-                        
+                        <h1>
+                            PREVIOUS GUESSES
+                        </h1>
                     </div>
+                </div>
+
+                <div id="win-window" class="hidden">
+                    <h1 id="win-title" class="overlay-effect">YOU WIN</h1>
+                    <p id="win-explanation-text">
+                        The <b>COMPUTER</b> picked the flag <span id="win-flag-name"></span>
+                        <br>
+                        The <b>USER</b> guessed the flag in <span id="win-guesses"></span> guesses
+                        <br>
+                        The <b>COMPUTER</b> <span class="overlay-effect"><b>OVERLAY</b></span>ed the flags
+                    </p>
+
+                    <div id="answer-flag">
+
+                    </div>
+                    <button id="play-again" onclick="startGame()"><b>PLAY AGAIN</b></button>
                 </div>
             </div>
         </div>
