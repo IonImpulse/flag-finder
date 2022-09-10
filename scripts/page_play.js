@@ -12,13 +12,36 @@ function updateGameScreen() {
 
 function startGame() {
     state.game_state.screen = "game-window";
-    state.game_state.answer = getRandomFlag();
+
+    const data_sets = document.getElementById("data-set-select").getElementsByTagName("input");
+    const data_set = [];
+    for (let d of data_sets) {
+        if (d.checked) {
+            data_set.push(d.value);
+        }
+    }
+
+    let flags_to_choose_from = state.flags;
+
+    if (data_set.length !== 0) {
+        flags_to_choose_from = flags_to_choose_from.filter(flag => {
+            return data_set.includes(flag.collection);
+        });
+    }
+
+    state.game_state.answer = flags_to_choose_from[Math.floor(Math.random() * flags_to_choose_from.length)];
+
     state.game_state.guessed_flags = [];
 
     console.log(state.game_state.answer);
 
     updateGameScreen();
     renderGame();
+}
+
+function resetGame() {
+    state.game_state.screen = "game-intro";
+    updateGameScreen();
 }
 
 function guess() {
