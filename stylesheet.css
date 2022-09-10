@@ -14,43 +14,7 @@ attribute-flag {
   padding: 0.2vmax;
 }
 
-.flag-red {
-  background-color: rgb(155, 11, 11);
-}
 
-.flag-green {
-  background-color: rgb(25, 68, 8);
-}
-
-.flag-teal {
-  background-color: rgb(8, 68, 63);
-}
-
-.flag-blue {
-  background-color: rgb(11, 11, 131);
-}
-
-.flag-yellow {
-  color: #1a1b1e;
-  background-color: rgb(218, 214, 4);
-}
-
-.flag-white {
-  color: #1a1b1e;
-  background-color: #eeeeee;
-}
-
-.flag-black {
-  background-color: #1a1b1e;
-}
-
-.flag-orange {
-  background-color: rgb(214, 101, 8);
-}
-
-.flag-purple {
-  background-color: rgb(66, 8, 68);
-}
 #top {
   font-family: "JetBrains Mono", monospace;
   background-color: #27292e;
@@ -66,7 +30,7 @@ attribute-flag {
   letter-spacing: 0.05vmax;
   border-left: 0.2vmax solid white;
   border-bottom: 0.2vmax solid white;
-  box-shadow: 0.5vmax 0.5vmax rgb(231, 60, 60);
+  box-shadow: 0.5vmax 0.5vmax #e73c3c;
   cursor: pointer;
   transition: box-shadow ease-in-out 0.3s, transform ease-in-out 0.1s;
 }

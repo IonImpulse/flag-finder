@@ -1,0 +1,266 @@
+:root {
+    --main-font: "Inter";
+
+    --theme-color-1: #3c14d0;
+    --theme-color-2: #e73c3c;
+    --theme-color-3: #1d1d1d;
+    --theme-color-4: #2b2b2b;
+    --theme-color-5: #3b3b3b;
+    
+    --text-color-main: #ececec;
+    --text-color-alt: #181818;
+    --text-color-light: #8c8c8c;
+}
+
+
+.flag-red {
+  background-color: rgb(155, 11, 11);
+}
+
+.flag-green {
+  background-color: rgb(25, 68, 8);
+}
+
+.flag-teal {
+  background-color: rgb(8, 68, 63);
+}
+
+.flag-blue {
+  background-color: rgb(11, 11, 131);
+}
+
+.flag-yellow {
+  color: #1a1b1e;
+  background-color: rgb(218, 214, 4);
+}
+
+.flag-white {
+  color: #1a1b1e;
+  background-color: #eeeeee;
+}
+
+.flag-black {
+  background-color: #1a1b1e;
+}
+
+.flag-orange {
+  background-color: rgb(214, 101, 8);
+}
+
+.flag-purple {
+  background-color: rgb(66, 8, 68);
+}
+
+body {
+    margin: 0;
+    background-color: var(--theme-color-3);
+}
+
+body * {
+    font-family: var(--main-font);
+}
+
+#main-grid {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: grid;
+    color: var(--text-color-main);
+    grid-template-areas: "header"
+                         "content";
+    grid-template-rows: 80px auto;
+    grid-template-columns: minmax(0, 1fr);
+    margin: 0px;
+    height: 100vh;
+    width: 100vw;
+}
+
+#main-grid >* {
+    margin: 10px;
+}
+
+.hidden {
+    display: none !important;
+}
+
+button {
+    background-color: var(--theme-color-4);
+    color: var(--text-color-main);
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all ease-in-out 0.1s;
+    border: solid 1px var(--theme-color-4);
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: var(--theme-color-5);
+    border: solid 1px var(--text-color-main);
+    border-radius: 0px;
+
+}
+
+#header {
+    grid-area: header;
+    display: grid;
+    grid-template-columns: .5fr repeat(5, 1fr);
+    grid-template-rows: minmax(0px, 1fr);
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    background-color: var(--theme-color-4);
+}
+
+#header::before {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    border-bottom: 2px solid var(--theme-color-1);
+    width: 0%;
+ }
+
+ #header.load::before {
+    animation: pulse-load .3s ease-in-out;
+ }
+
+@keyframes pulse-load {
+    0% {
+        width: 0%;
+    }
+    70% {
+        width: 100%;
+    }
+
+    80% {
+        width: 100%;
+        opacity: 100%;
+    }
+
+    100% {
+        opacity: 0%;
+    }
+}
+
+
+#header button {
+    height: 100%;
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
+#Logo { 
+    background-image: url("/logo/Logo.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 60%;
+}
+
+#content {
+    grid-area: content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--theme-color-4);
+}
+
+.page {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.highlight {
+    background-color: var(--theme-color-1);
+    color: var(--text-color-main);
+    padding: 20px;
+    margin-left: 10px;
+    font-weight: 900;
+    font-size: 1.5em;
+}
+
+#welcome-message {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+#random-drifting-flags {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: repeat(autofit, 70px);
+    grid-template-columns: 1fr;
+    align-items: center;
+}
+
+.flag {
+    background-color: var(--theme-color-4);
+    width: 200px;
+    height: 140px;
+}
+
+.flag img {
+    width: 100%;
+    height: 100%;
+}
+
+.flag.small {
+    width: 100px;
+    height: 70px;
+}
+
+.flag.scroll {
+    animation: scroll-flag 20s linear infinite;
+    position: relative;
+}
+
+.flag-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--theme-color-1);
+    opacity: 0;
+    transition: all ease-in-out 0.5s;
+    cursor: pointer;
+}
+
+.flag.small .flag-info {
+    font-size: .5em;
+}
+
+.flag:hover .flag-info{
+    opacity: 1;
+}
+
+@keyframes scroll-flag {
+    0% {
+        left: -10%;
+    }
+    100% {
+        left: 110%;
+    }
+}

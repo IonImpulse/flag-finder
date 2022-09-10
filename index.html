@@ -4,67 +4,108 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Flag Finder</title>
-        <meta name="description" content="A website to quickly and easily find various flags.">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="stylesheet.css">
-        <link rel="shortcut icon" type="image/png" href="favicon.ico?">
 
-        <meta property="og:title" content="Flag Finder" />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.flagfinder.app/" />
-        <meta property="og:image" content="https://www.flagfinder.app/example-flags/un.svg" />
-        <meta property="og:description" content="A website to quickly and easily find various flags." />
-        <meta name="theme-color" content="#2b1849">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Flag Finder</title>
+    <meta name="description" content="A website to quickly and easily find various flags.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="favicon.ico?">
 
-        <!-- Include this to make the og:image larger -->
-        <meta name="twitter:card" content="summary_large_image">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@200;400&family=Righteous&display=swap"
+        rel="stylesheet">
 
-    </head>
+    <link rel="stylesheet" href="css/main.css">
+    <meta property="og:title" content="Flag Finder" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.flagfinder.app/" />
+    <meta property="og:image" content="https://www.flagfinder.app/example-flags/un.svg" />
+    <meta property="og:description" content="A website to quickly and easily find various flags." />
+    <meta name="theme-color" content="#2b1849">
 
-    
-    <body>
-        <!--[if lt IE 7]>
+    <!-- Include this to make the og:image larger -->
+    <meta name="twitter:card" content="summary_large_image">
+
+</head>
+
+
+<body>
+    <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        
-        <div id="top" onclick="go_home()"">
-            <div class="subtext">
-                Vazquez Inc.
-            </div>
-            Flag Finder
-            <div class="subtext" id="subtext">
-                [ With a database of <number-flag>...</number-flag> flags and counting ]
-            </div>
-        </div>
-        
-        <div id="question-holder"></div>      
 
-        <div id="stats-holder"></div>
-        
-        <div id="choices-holder">
-            <div class="good-button" id="start-button" onclick="start_click()">
-                START
-            </div>
-            
-            <div class="good-button" id="view-button" onclick="view_click()">
-                VIEW All FLAGS
-            </div>
-        </div>        
+    <div id="main-grid">
+        <div id="header" class="load">
+            <button id="Logo" onclick="setPage('home')"">
+            </button>
 
-        <div id="answers-holder"></div>
-        
-        <div class="sub">
-            Thanks to  <a href="https://flagpedia.net/">Flagpedia</a> for many of the flags used!
+            <button id="Home" onclick="setPage('home')">
+                Home
+            </button>
+
+            <button id="Find" onclick="setPage('find')">
+                Find
+            </button>
+
+            <button id="Search" onclick="setPage('search')">
+                Search
+            </button>
+
+            <button id="Play" onclick="setPage('play')">
+                Play
+            </button>
+
+            <button id="About" onclick="setPage('about')">
+                About
+            </button>
         </div>
 
-        
-        <script src="scripts/lazysizes.min.js" async=""></script>
-        <script src="scripts/papaparse.min.js"></script>
-        <script src="scripts/script.js" async defer></script>
-    </body>
+        <div id="content">
+            <div id="home" class="page">
+                <h1 id="welcome-message">
+                    Welcome to <span class="highlight">Flag Finder</span>
+                </h1>
+
+                <div id="random-drifting-flags">
+
+                </div>
+            </div>
+
+            <div id="find" class="page hidden">
+                Find
+            </div>
+
+            <div id="search" class="page hidden">
+                Search
+            </div>
+
+            <div id="play" class="page hidden">
+                Play
+            </div>
+
+            <div id="about" class="page hidden">
+                About
+            </div>
+        </div>
+    </div>
+
+
+    <script src="scripts/libs/fuzzysort.min.js"></script>
+    <script src="scripts/libs/lazysizes.min.js"></script>
+    <script src="scripts/libs/papaparse.min.js"></script>
+
+    <script src="scripts/utils.js"></script>
+    <script src="scripts/page_home.js"></script>
+    <script src="scripts/page_find.js"></script>
+    <script src="scripts/page_search.js"></script>
+    <script src="scripts/page_play.js"></script>
+    <script src="scripts/page_about.js"></script>
+
+    <script src="scripts/start.js"></script>
+</body>
 
 </html>
