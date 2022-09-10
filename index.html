@@ -205,6 +205,31 @@
                         <br>
                         The <b>COMPUTER</b> <span class="overlay-effect"><b>OVERLAY</b></span>s the flags
                     </p>
+                    <div id="data-set-select">
+                        <!--
+                                Data sets: Countries, Cities of the World, Corporations, Ideologies, Organizations, Pride, US States & Territories
+                                -->
+                        <input type="checkbox" id="countries-1" name="countries" value="Countries">
+                        <label for="countries-1">Countries</label>
+
+                        <input type="checkbox" id="cities-1" name="cities" value="Cities of the World">
+                        <label for="cities-1">Cities</label>
+
+                        <input type="checkbox" id="corporations-1" name="corporations" value="Corporations">
+                        <label for="corporations-1">Corporations</label>
+
+                        <input type="checkbox" id="ideologies-1" name="ideologies" value="Ideologies">
+                        <label for="ideologies-1">Ideologies</label>
+
+                        <input type="checkbox" id="organizations-1" name="organizations" value="Organizations">
+                        <label for="organizations-1">Organizations</label>
+
+                        <input type="checkbox" id="pride-1" name="pride" value="Pride">
+                        <label for="pride-1">Pride</label>
+
+                        <input type="checkbox" id="us-states-1" name="us-states" value="US States & Territories">
+                        <label for="us-states-1">US States</label>
+                    </div>
                     <button id="start-game" onclick="startGame()"><b>START</b></button>
                 </div>
 
@@ -246,7 +271,7 @@
                     <div id="answer-flag">
 
                     </div>
-                    <button id="play-again" onclick="startGame()"><b>PLAY AGAIN</b></button>
+                    <button id="play-again" onclick="resetGame()"><b>PLAY AGAIN</b></button>
                 </div>
             </div>
         </div>
@@ -263,9 +288,9 @@
                     locally on GitHub.
                     Country flags specifically are sourced from <a href="https://flagpedia.net/">Flagpedia</a>.
                     <br><br>
-                    There are currently 1,456 flags in the database, in 7 data sets.    
+                    There are currently 1,456 flags in the database, in 7 data sets.
                 </p>
-                
+
                 <h1>
                     Credits
                 </h1>
