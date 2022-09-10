@@ -103,3 +103,15 @@ function setPage(page) {
 
     document.querySelector(`.page#${page}`).classList.remove("hidden");
 }
+
+function removeAllChildren(element, keep_first_n = 0) {
+    while (element.childNodes.length > keep_first_n) {
+        element.removeChild(element.firstChild);
+    }
+}
+
+function appendChildren(element, children) {
+    for (let i = 0; i < children.length; i++) {
+        element.appendChild(children[i]);
+    }
+}
