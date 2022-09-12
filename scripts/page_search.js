@@ -3,24 +3,44 @@ function search() {
     const search_text = document.getElementById("search-input").value;
     const results = searchFlags(search_text, filters);
 
+    console.info("Searching for...", search_text);
     const results_div = document.getElementById("search-results");
 
-    removeAllChildren(results_div);
 
     if (results.length === 0) {
+        removeAllChildren(results_div);
+
         const no_results = document.createElement("p");
         no_results.innerHTML = "No results found.";
         results_div.appendChild(no_results);
     } else {
+        let divs = [];
         for (let result of results) {
             const flag_div = createFlagDiv(result, true, true, ["search", "lazyloaded"]);
-            results_div.appendChild(flag_div);
+            divs.push(flag_div);
         }
+
+        state.current_search_results = divs;
+
+        removeAllChildren(results_div);
+        appendChildren(results_div, state.current_search_results.slice(0, 100));
+
+        results_div.addEventListener("scroll", () => {
+
+            if (results_div.scrollTop + results_div.clientHeight >= results_div.scrollHeight - 200) {
+                const new_divs = state.current_search_results.slice(results_div.childElementCount, results_div.childElementCount + 100);
+
+
+                appendChildren(results_div, new_divs);
+            }
+        })
     }
 }
 
-document.getElementById("filters-bar").addEventListener("click", () => {
-    search();
+document.getElementById("filters-bar").addEventListener("mouseup", () => {
+    setTimeout(() => {
+        search();
+    }, 100);
 });
 
 function getFilters() {
