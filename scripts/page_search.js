@@ -51,7 +51,7 @@ function searchFlags(text, filters) {
     for (let filter_name in filters) {
         const filter_values = filters[filter_name];
 
-        if (filter_name == "color-filters" || filter_name == "misc-filters" || filter_name == "shape-filters") {
+        if (filter_name == "color-filters" || filter_name == "misc-filters" || filter_name == "shapes-filters") {
             if (filter_values.length > 0) {
                 results = results.filter(flag => {
                     for (let filter_value of filter_values) {
